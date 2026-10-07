@@ -8,6 +8,6 @@
   </PropertyGroup>
   <Import Project="$(TModLoaderDirectory)/tMLMod.targets" />
   <ItemGroup>
-    <Reference Include="Riakawa" HintPath="../../Riakawa/bin/Debug/net8.0/Riakawa.dll" Private="false" />
+    <Reference Include="Riakawa" HintPath="../../Riakawa/bin/Release/net8.0/Riakawa.dll" Private="false" />
   </ItemGroup>
 </Project>

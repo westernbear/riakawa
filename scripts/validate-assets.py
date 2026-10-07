@@ -8,7 +8,7 @@ from functools import cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CHARACTERS = {'Chiikawa', 'Hachiware', 'Usagi'}
+CHARACTERS = {'Chiikawa', 'Hachiware', 'Usagi', 'Momonga'}
 ANIMATIONS = {'idle', 'walk', 'jump', 'swim', 'attack', 'mount', 'hurt', 'death', 'emote'}
 THEMES = {'menu', 'overworld-day', 'night', 'underground', 'jungle-mushroom', 'snow',
           'desert', 'ocean', 'danger', 'events', 'bosses', 'final-boss'}
@@ -101,7 +101,7 @@ def validate(release=False):
     require(len(actual) == len(set(actual)), 'duplicate weapon/character entries')
     require(set(actual) == expected, f'weapon coverage mismatch: missing {len(expected-set(actual))}, extra {len(set(actual)-expected)}')
     players = [p['character'] for p in manifest['players']]
-    require(len(players) == 3 and set(players) == CHARACTERS, 'exactly three player entries required')
+    require(len(players) == len(CHARACTERS) and set(players) == CHARACTERS, 'player entries differ from supported characters')
     hashes = {}
 
     def texture(name, vanilla_key=None, unique=False):

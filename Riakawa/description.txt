@@ -1,5 +1,5 @@
-Chiikawa, Hachiware and Usagi cosmetic mod for Terraria 1.4.4.9 / tModLoader v2026.08.3.0.
-Play as Chiikawa, Hachiware or Usagi, with character-specific skins for 426 vanilla weapons, attack effects and voices. Native combat stats and progression are preserved.
+Chiikawa, Hachiware, Usagi and Momonga cosmetic mod for Terraria 1.4.4.9 / tModLoader v2026.08.3.0.
+Play as one of four characters, with character-specific skins for 426 vanilla weapons, attack effects and voices. Native combat stats and progression are preserved.
 Music is delivered separately as the Riakawa Music resource pack.
 Press V to emote. Choose characters and toggle cosmetics or sounds in Mod Configuration. Korean and English supported.
 Unofficial, noncommercial fan project. Chiikawa belongs to Nagano and its respective rights holders.

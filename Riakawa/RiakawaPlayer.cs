@@ -32,7 +32,7 @@ public sealed class RiakawaPlayer : ModPlayer
     private void ReadConfig()
     {
         var value = RiakawaConfig.Current.Character;
-        Character = value <= Character.Usagi ? value : Character.Original;
+        Character = value <= Character.Momonga ? value : Character.Original;
     }
 
     public override void PreUpdate()

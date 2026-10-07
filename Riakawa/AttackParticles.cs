@@ -89,8 +89,8 @@ public sealed class AttackParticles : ModSystem
                 if (character == Character.Original) continue;
                 restore.Add((dust, dust.frame));
                 int column = ((int)character - 1) * 30 + Math.Abs(dust.frame.Y / 10 % 3) * 10;
-                // The fourth group is transparent. Draw/culling and AI still run.
-                if (config.ReducedEffects && i % 2 != 0) column = 90;
+                // The cell after the character groups is transparent; AI still runs.
+                if (config.ReducedEffects && i % 2 != 0) column = ((int)Character.Momonga) * 30;
                 else LastStyledCount++;
                 dust.frame = new Rectangle(column, nativeHeight + 2, 8, 8);
             }

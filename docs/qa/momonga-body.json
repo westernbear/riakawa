@@ -1,0 +1,86 @@
+[
+  {
+    "character": "Momonga",
+    "expected": "walk",
+    "itemAnimation": 15,
+    "velocity": [
+      0.484,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:40 Y:56 Width:40 Height:56}"
+  },
+  {
+    "character": "Momonga",
+    "expected": "mount",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": true,
+    "frame": "{X:80 Y:280 Width:40 Height:56}"
+  },
+  {
+    "character": "Momonga",
+    "expected": "jump",
+    "itemAnimation": 14,
+    "velocity": [
+      0,
+      -4.61
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:0 Y:112 Width:40 Height:56}"
+  },
+  {
+    "character": "Momonga",
+    "expected": "swim",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": true,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:80 Y:168 Width:40 Height:56}"
+  },
+  {
+    "character": "Momonga",
+    "expected": "invisible",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": true,
+    "gravDir": 1,
+    "mount": false,
+    "frame": null
+  },
+  {
+    "character": "Momonga",
+    "expected": "jump",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      -10.01
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": -1,
+    "mount": false,
+    "frame": "{X:40 Y:112 Width:40 Height:56}"
+  }
+]

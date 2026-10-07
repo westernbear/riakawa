@@ -1,6 +1,6 @@
 # Riakawa
 
-치이카와·하치와레·우사기를 테라리아에 더하는 tModLoader 팬 모드입니다.
+치이카와·하치와레·우사기·모몽가를 테라리아에 더하는 tModLoader 팬 모드입니다.
 캐릭터와 무기 외형, 공격 연출과 소리를 바꾸면서 기존 전투 성능은 유지합니다.
 
 ## 플레이 화면
@@ -16,6 +16,11 @@
 <p>
   <img src="docs/screenshots/chiikawa-mount.png" width="49%" alt="슬라임 탈것에 탄 치이카와의 검 공격">
   <img src="docs/screenshots/usagi-emote.png" width="49%" alt="우사기의 감정표현">
+</p>
+
+<p>
+  <img src="docs/screenshots/momonga-melee.png" width="49%" alt="모몽가와 우사기가 같은 검을 사용하는 모습">
+  <img src="docs/screenshots/momonga-summon.png" width="49%" alt="모몽가와 꼬리가 달린 소환수">
 </p>
 
 ## 지원 환경

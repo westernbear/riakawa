@@ -9,7 +9,8 @@
       "Emotes": {
         "Chiikawa": "와아!",
         "Hachiware": "어떻게든 돼라!",
-        "Usagi": "야하!"
+        "Usagi": "야하!",
+        "Momonga": "칭찬해라!"
       },
       "Configs": {
         "RiakawaConfig": {
@@ -55,6 +56,9 @@
           },
           "Usagi": {
             "Label": "우사기"
+          },
+          "Momonga": {
+            "Label": "모몽가"
           }
         },
         "InterfaceLanguage": {

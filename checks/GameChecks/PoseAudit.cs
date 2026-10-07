@@ -60,7 +60,7 @@ internal static class PoseAudit
         var oldRandom = Main.rand; var oldConfig = RiakawaConfig.Current.ReplaceWeapons;
         int mouseX = Main.mouseX, mouseY = Main.mouseY;
         const int cell = 256;
-        using var target = new RenderTarget2D(graphics,12*cell,4*cell);
+        using var target = new RenderTarget2D(graphics,12*cell,Enum.GetValues<Character>().Length*cell);
         using var batch = new SpriteBatch(graphics);
         var results = new List<object>();
         bool begun = false;
@@ -147,6 +147,6 @@ internal static class PoseAudit
             graphics.BlendState=blend;graphics.DepthStencilState=depth;graphics.RasterizerState=rasterizer;graphics.SamplerStates[0]=sampler;
             Main.rand=oldRandom;Main.mouseX=mouseX;Main.mouseY=mouseY;RiakawaConfig.Current.ReplaceWeapons=oldConfig;
         }
-        ModLoader.GetMod("GameChecks").Logger.Info($"PASS: native layer pose sheets: {results.Count} weapons x 4 characters x 4 orientations x 3 use phases");
+        ModLoader.GetMod("GameChecks").Logger.Info($"PASS: native layer pose sheets: {results.Count} weapons x {Enum.GetValues<Character>().Length} appearances x 4 orientations x 3 use phases");
     }
 }

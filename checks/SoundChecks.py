@@ -26,7 +26,7 @@ for cue in cues:
     if cue.get('notes'):
         assert len(cue['notes']) == 3 and cue['notes'][0] < cue['notes'][1] < cue['notes'][2]
         chords.setdefault(cue['character'],set()).add(cue['family'])
-assert all(chords.get(c) == {f'chord{i}' for i in range(133,139)} for c in ['Chiikawa','Hachiware','Usagi'])
+assert all(chords.get(p['character']) == {f'chord{i}' for i in range(133,139)} for p in manifest['players'])
 for weapon in manifest['weapons']:
     if catalog[weapon['itemId']]['sound']:
         assert weapon['useSound'] in assets, weapon['itemId']
@@ -61,4 +61,4 @@ for player in manifest['players']:
         hashes.add(digest)
         voices.append({'character': player['character'], 'cue': cue, 'seconds': duration, 'peak': peak, 'sha256': digest})
 (root/'artifacts/voice-checks.json').write_text(json.dumps(voices, indent=2)+'\n')
-print('PASS: nine unique voice cues, short hurt/death, synthetic reference provenance and clean PCM edges')
+print(f'PASS: {len(voices)} unique voice cues, short hurt/death, synthetic reference provenance and clean PCM edges')

@@ -16,7 +16,7 @@ spec = importlib.util.spec_from_file_location('special', ROOT/'scripts/draw-spec
 special = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(special)
 INK = (64,39,31)
-PALETTES = {'Chiikawa': (249,159,191), 'Hachiware': (112,185,214), 'Usagi': (245,179,92)}
+PALETTES = {'Chiikawa': (249,159,191), 'Hachiware': (112,185,214), 'Usagi': (245,179,92), 'Momonga': (169,216,221)}
 
 
 def mix(a,b,t):
@@ -68,6 +68,12 @@ def redraw(source, weapon, name):
                    (left+size//2,top+size-2)],fill='#fff8eb',outline=INK)
         d.polygon([(left+size-3,top+size//2),(left+size-1,top+1),(left+size-1,top+size-2)],fill=accent,outline=INK)
         d.point((left+size//3,top+size//2-1),fill=INK)
+    elif name == 'Momonga':
+        # A curled flying-squirrel tail and white membrane charm.
+        d.ellipse((left,top,left+size-1,top+size-1),fill=accent,outline=INK)
+        d.polygon([(left,top+size//2),(left+size//2,top+size//3),
+                   (left+size//2,top+size-2),(left+size-1,top+size-1)],fill='#faf7f7',outline=INK)
+        d.arc((left+size//3,top+1,left+size-2,top+size-3),270,100,fill=INK)
     else:
         middle=left+size//2
         for x in (middle-3,middle+1):

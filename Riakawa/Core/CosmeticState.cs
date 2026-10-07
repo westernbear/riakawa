@@ -2,7 +2,7 @@ using System;
 
 namespace Riakawa.Core;
 
-public enum Character : byte { Original, Chiikawa, Hachiware, Usagi }
+public enum Character : byte { Original, Chiikawa, Hachiware, Usagi, Momonga }
 public enum MessageKind : byte { State, Emote }
 
 // Shared by the mod and the dependency-free protocol check.
@@ -20,7 +20,7 @@ public readonly record struct CosmeticMessage(MessageKind Kind, byte Player, Cha
     {
         message = default;
         if (data.Length != Size || data[0] != Version || data[1] > (byte)MessageKind.Emote ||
-            data[2] == 255 || data[3] > (byte)Character.Usagi)
+            data[2] == 255 || data[3] > (byte)Character.Momonga)
             return false;
         ushort ticks = (ushort)(data[4] | (data[5] << 8));
         if (ticks > EmoteDuration)

@@ -43,7 +43,8 @@ public sealed class WeaponSweep : ModPlayer
                 (selected == null || selected.Contains(id))).Take(limit).ToArray();
         if (weapons.Length == 0) throw new UsageException("No supported weapons selected.");
         summonSweep = summons;
-        cycleCharacters = !original; alternateUse = alternate;
+        cycleCharacters = !original && Environment.GetEnvironmentVariable("RIAKAWA_QA_FIXED_CHARACTER") == null;
+        alternateUse = alternate;
         if (original) RiakawaConfig.Current.Character = Riakawa.Core.Character.Original;
         ammunition = [];
         Begin();
@@ -63,7 +64,8 @@ public sealed class WeaponSweep : ModPlayer
         weapons = pairs.Select(x => x.GetProperty("weaponId").GetInt32()).ToArray();
         ammunition = pairs.Select(x => x.GetProperty("ammoId").GetInt32()).ToArray();
         summonSweep = false;
-        cycleCharacters = true; alternateUse = false;
+        cycleCharacters = Environment.GetEnvironmentVariable("RIAKAWA_QA_FIXED_CHARACTER") == null;
+        alternateUse = false;
         Begin();
     }
 
@@ -101,7 +103,7 @@ public sealed class WeaponSweep : ModPlayer
         Player.statMana = 200;
         duration = item.DamageType == Terraria.ModLoader.DamageClass.Summon ? 300 :
             item.channel ? 180 : item.shoot > ProjectileID.None ? 120 : 60;
-        if (AttackRenderAudit.Enabled) duration = Math.Max(duration,item.channel ? 720 : 210);
+        if (AttackRenderAudit.Enabled) duration = Math.Max(duration,item.channel ? 720 : 270);
         ticks = 0;
         NetMessage.SendData(MessageID.SyncEquipment, number: Player.whoAmI, number2: 0);
         NetMessage.SendData(MessageID.SyncEquipment, number: Player.whoAmI, number2: 54);
@@ -134,7 +136,7 @@ public sealed class WeaponSweep : ModPlayer
     {
         if (!Running || Player.whoAmI != Main.myPlayer || Main.drawingPlayerChat) return;
         if (AttackRenderAudit.Enabled) {
-            if (cycleCharacters) RiakawaConfig.Current.Character = (Riakawa.Core.Character)(1+ticks/60%3);
+            if (cycleCharacters) RiakawaConfig.Current.Character = (Riakawa.Core.Character)(1+ticks/60%(Enum.GetValues<Riakawa.Core.Character>().Length-1));
             Player.immune = true; Player.immuneNoBlink = true; Player.immuneTime = 2; Player.statLife = Player.statLifeMax2;
         }
         Player.position = position;

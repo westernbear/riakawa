@@ -1,7 +1,7 @@
 [h1]Riakawa Music[/h1]
 치이카와 모드 Riakawa를 위한 12개 테마의 음악 팩입니다. 포근한 일상 음악부터 긴장감 있는 보스전까지, 기본 게임과 Otherworld 음악 89개 트랙을 교체합니다. 비·바람 환경음은 유지합니다.
 
-12 themes for Riakawa, the Chiikawa, Hachiware and Usagi Terraria mod. Replaces 89 vanilla and Otherworld music tracks while preserving rain and wind ambience, native music selection, music boxes and fades.
+12 themes for Riakawa, the Chiikawa, Hachiware, Usagi and Momonga Terraria mod. Replaces 89 vanilla and Otherworld music tracks while preserving rain and wind ambience, native music selection, music boxes and fades.
 
 [h2]Install / 설치[/h2]
 Subscribe, then enable Riakawa Music in Workshop → Use Resource Packs. Adjust the game's Music volume. Works with Terraria 1.4.4.9 and tModLoader v2026.08.3.0. The music pack also works independently of the character mod.

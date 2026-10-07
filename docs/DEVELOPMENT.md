@@ -32,6 +32,20 @@ world-editing commands in a real save. Recorded QA checks read local `artifacts/
 outputs. The published summaries describe the tested versions and limits in
 [APPEARANCE-REVIEW.md](APPEARANCE-REVIEW.md).
 
+## Momonga assets
+
+`scripts/add-momonga.py` uses the existing weapon and attack catalog plus locally
+exported Terraria reference images. It rebuilds Momonga's 36 animation frames and
+426 weapon skins. Regeneration resets Momonga's voice links and review flags.
+Restore the generated audio with `scripts/prepare-voices.py --characters Momonga`,
+run `scripts/generate-weapon-sounds.cjs`, then review the rebuilt art before release.
+The reference, generation settings and review records are in `assets/momonga-*.json`.
+
+```sh
+.tools/assets-env/bin/python checks/MomongaChecks.py
+.tools/assets-env/bin/python checks/ArtChecks.py --poses artifacts/qa/momonga/poses
+python3 checks/VoiceChecks.py --qa artifacts/qa/momonga --characters Momonga
+```
 
 ## Combat replay
 

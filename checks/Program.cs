@@ -19,7 +19,12 @@ Check(!CosmeticMessage.TryDecode([1, 1, 4, 1, 0, 0, 0], out _), "Reject extra pa
 Check(!CosmeticMessage.TryDecode([2, 1, 4, 1, 0, 0], out _), "Reject version mismatch");
 Check(!CosmeticMessage.TryDecode([1, 9, 4, 1, 0, 0], out _), "Reject unknown kind");
 Check(!CosmeticMessage.TryDecode([1, 1, 255, 1, 0, 0], out _), "Reject invalid player");
-Check(!CosmeticMessage.TryDecode([1, 1, 4, 4, 0, 0], out _), "Reject invalid character");
+Check(!CosmeticMessage.TryDecode([1, 1, 4, 5, 0, 0], out _), "Reject invalid character");
+foreach (var character in Enum.GetValues<Character>()) {
+    var state = new CosmeticMessage(MessageKind.State, 4, character, 0);
+    Check(CosmeticMessage.TryDecode(state.Encode(), out var copy) && copy == state, $"Roundtrip {character}");
+}
+Check((byte)Character.Usagi == 3 && (byte)Character.Momonga == 4, "Existing character IDs remain stable");
 Check(!CosmeticMessage.TryDecode([1, 1, 4, 1, 91, 0], out _), "Reject oversized emote");
 Check(!(request with { EmoteTicks = 90 }).IsClientRequestFrom(4), "Server owns emote duration");
 var clock = new EmoteClock();

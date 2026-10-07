@@ -6,6 +6,7 @@ Mods: {
 			Chiikawa: Waa!
 			Hachiware: It will work out!
 			Usagi: Yaha!
+			Momonga: Praise me!
 		}
 
 		Configs: {
@@ -80,6 +81,11 @@ Mods: {
 
 				Usagi: {
 					Label: Usagi
+					Tooltip: ""
+				}
+
+				Momonga: {
+					Label: Momonga
 					Tooltip: ""
 				}
 

@@ -35,7 +35,7 @@ function generate(character, key, item, impact = false) {
     bow:[2,.26,-.08,.025,.29], shot:[3,.44,-.18,.015,.2],
     magic:[2,.48,.015,.05,.4], summon:[2,.36,.1,.07,.43], impact:[3,.2,-.1,.04,.3] }[chord ? 'magic' : family];
   const [wave, freq, slide, sustain, decay] = params;
-  const tune = {Chiikawa:.95,Hachiware:1.04,Usagi:1.15}[character];
+  const tune = {Chiikawa:.95,Hachiware:1.04,Usagi:1.15,Momonga:1.09}[character];
   const sound = {...base, wave_type:wave, p_base_freq:freq*tune*(.97+Math.random()*.06),
     p_freq_limit:0, p_freq_ramp:slide, p_env_attack:.05, p_env_sustain:sustain,
     p_env_decay:decay, p_lpf_freq:wave===3?.6:.85, p_hpf_freq:0,
@@ -48,7 +48,8 @@ function generate(character, key, item, impact = false) {
     const [rootNote,minor] = {133:[261.6256,false],134:[293.6648,false],135:[329.6276,true],
       136:[391.9954,false],137:[246.9417,true],138:[220,true]}[chord];
     notes = [0,minor?3:4,7].map(n => rootNote*2**(n/12)*(character==='Usagi'?2:1));
-    const parts = notes.map(hz => Buffer.from(sfxr.toWave({...sound, wave_type:character==='Hachiware'?1:2,
+    const parts = notes.map(hz => Buffer.from(sfxr.toWave({...sound, wave_type:character==='Momonga'?0:character==='Hachiware'?1:2,
+      p_duty:character==='Momonga'?.32:0,
       p_base_freq:Math.sqrt(hz*100/(8*44100)-.001),p_freq_ramp:0,p_arp_mod:0,p_arp_speed:0,
       p_lpf_freq:.55}).dataURI.split(',')[1],'base64'));
     assert(parts.every(p => p.length===parts[0].length));
@@ -84,7 +85,7 @@ try {
 } finally { Math.random = random; }
 const retained = new Set([...made.values()].map(c => path.basename(c.asset)+'.wav'));
 for (const file of fs.readdirSync(path.join(root,'Riakawa/Assets/Sounds/Weapons'))) {
-  if (/^(chiikawa|hachiware|usagi)-[a-z0-9]+-[a-f0-9]{12}\.wav$/.test(file) && !retained.has(file))
+  if (/^(chiikawa|hachiware|usagi|momonga)-[a-z0-9]+-[a-f0-9]{12}\.wav$/.test(file) && !retained.has(file))
     fs.unlinkSync(path.join(root,'Riakawa/Assets/Sounds/Weapons',file));
 }
 fs.writeFileSync(path.join(root,'Riakawa/Assets/manifest.json'),JSON.stringify(manifest,null,2)+'\n');

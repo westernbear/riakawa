@@ -10,6 +10,7 @@ from qwen_tts import Qwen3TTSModel
 parser = argparse.ArgumentParser()
 parser.add_argument('--combat', action='store_true')
 parser.add_argument('--references', type=Path)
+parser.add_argument('--characters', nargs='+', help='Generate only the named characters')
 parser.add_argument('--output', type=Path, default=Path('/workspace/riakawa/outputs/voices'))
 args = parser.parse_args()
 if args.combat and not args.references:
@@ -27,11 +28,19 @@ voices = {
         'Friendly, optimistic and brave. A short excited Japanese exclamation, no background sound.'),
     'usagi': ('ヤハ！', 'A tiny mischievous fictional creature with a high-pitched, nasal and energetic squeaky voice. '
         'Wildly enthusiastic, bouncy, playful and loud but not harsh. A quick Japanese exclamation, no background sound.'),
+    'momonga': ('ほめろ！', 'A tiny fluffy fictional flying squirrel with a high-pitched, sweet, lightly nasal voice. '
+        'Playfully demanding praise, smug and impish, crisp Japanese diction with a short upward squeak. '
+        'Cute but self-important, no imitation of any actor, no background sound.'),
 }
 combat = {'chiikawa': {'hurt': 'あっ！', 'death': 'うう…'},
           'hachiware': {'hurt': 'いたっ！', 'death': 'ああ…'},
-          'usagi': {'hurt': 'ウラッ！', 'death': 'ううう…'}}
+          'usagi': {'hurt': 'ウラッ！', 'death': 'ううう…'},
+          'momonga': {'hurt': 'いたっ！', 'death': 'うう…'}}
+if args.characters and set(args.characters)-voices.keys():
+    parser.error('Unknown character')
 for index, (character, (emote, description)) in enumerate(voices.items()):
+    if args.characters and character not in args.characters:
+        continue
     reference = {}
     if args.combat:
         ref = args.references / f'{character}-emote-draft.wav'

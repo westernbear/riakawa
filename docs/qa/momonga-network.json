@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "modSha256": "94be72eafd389037361eeb8afe3a664068cbbe05fda38ecf75435ab83b1f37de",
+  "characters": [
+    "Momonga",
+    "Usagi"
+  ],
+  "scenarios": [
+    "V emote",
+    "same weapon",
+    "moving/attacking emote",
+    "Original restoration",
+    "child projectile ownership",
+    "existing summon on late join",
+    "effect toggles",
+    "walk",
+    "mount",
+    "jump",
+    "swim",
+    "inverted gravity",
+    "invisibility"
+  ]
+}

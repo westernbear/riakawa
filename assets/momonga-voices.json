@@ -1,0 +1,45 @@
+{
+  "character": "Momonga",
+  "tool": "Qwen3-TTS",
+  "voices": {
+    "emote": {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "text": "ほめろ！",
+      "instruct": "A tiny fluffy fictional flying squirrel with a high-pitched, sweet, lightly nasal voice. Playfully demanding praise, smug and impish, crisp Japanese diction with a short upward squeak. Cute but self-important, no imitation of any actor, no background sound.",
+      "seed": 423,
+      "sampleRate": 24000,
+      "status": "draft",
+      "assetSha256": "6bdaec908e0f1b6f8693bc83a3355876fd44e26436bafae1a5b3d59962937221"
+    },
+    "hurt": {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "text": "いたっ！",
+      "instruct": null,
+      "seed": 433,
+      "sampleRate": 24000,
+      "status": "draft",
+      "reference": "momonga-emote-draft.wav",
+      "referenceSha256": "a88c856929b0796106c05c54c26abae69c8d5ecdb2a6a67f1cbc2409bf8227e9",
+      "referenceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "referenceRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "assetSha256": "48fbdd77c38567591c06a37e238a2d31d57b5459882731ec2393ff3c0f3a1b78"
+    },
+    "death": {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "text": "うう…",
+      "instruct": null,
+      "seed": 443,
+      "sampleRate": 24000,
+      "status": "draft",
+      "reference": "momonga-emote-draft.wav",
+      "referenceSha256": "a88c856929b0796106c05c54c26abae69c8d5ecdb2a6a67f1cbc2409bf8227e9",
+      "referenceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "referenceRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "assetSha256": "d63d671fc1708b91c46337ac92d43d4eae37140af0188eb7f9a2e510da5a8748"
+    }
+  },
+  "listeningReviewedByUser": false
+}

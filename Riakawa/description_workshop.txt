@@ -1,12 +1,12 @@
-[h1]Riakawa: Chiikawa, Hachiware & Usagi[/h1]
-치이카와·하치와레·우사기로 테라리아를 모험하세요. 캐릭터, 무기 외형, 공격 연출과 소리를 바꾸며 기본 게임의 전투 수치와 진행은 유지합니다.
+[h1]Riakawa: Chiikawa, Hachiware, Usagi & Momonga[/h1]
+치이카와·하치와레·우사기·모몽가로 테라리아를 모험하세요. 캐릭터, 무기 외형, 공격 연출과 소리를 바꾸며 기본 게임의 전투 수치와 진행은 유지합니다.
 
-Play Terraria as Chiikawa, Hachiware or Usagi. Character-specific skins for 426 vanilla weapons, attack effects, custom voices and emotes. Native combat stats, collision and progression are preserved.
+Play Terraria as Chiikawa, Hachiware, Usagi or Momonga. Character-specific skins for 426 vanilla weapons, attack effects, custom voices and emotes. Native combat stats, collision and progression are preserved.
 
 [h2]In the mod / 모드 구성[/h2]
 [list]
-[*]Three animated characters; armor and body accessories hidden, wings and mounts retained.
-[*]1,278 weapon variants covering inventory, dropped and held items, with projectiles, minions, whips, beams and chains.
+[*]Four animated characters; armor and body accessories hidden, wings and mounts retained.
+[*]1,704 weapon variants covering inventory, dropped and held items, with projectiles, minions, whips, beams and chains.
 [*]Press V to emote. Rebind in Controls. Emotes do not interrupt movement or combat.
 [*]Character and emote synchronization in multiplayer.
 [*]Korean / English settings: restore Original appearance, switch characters, toggle visuals, voices and effects.

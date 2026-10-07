@@ -19,7 +19,8 @@ SIZES = json.loads((ROOT/'assets/texture-sizes.json').read_text())
 
 
 def badge(image, name, box):
-    face = characters.sprite(name.lower()).crop((5, 3 if name == 'Usagi' else 12, 36, 40))
+    crop = (1,9,36,40) if name == 'Momonga' else (5,3 if name == 'Usagi' else 12,36,40)
+    face = characters.sprite(name.lower()).crop(crop)
     face.thumbnail(box[2:], Image.Resampling.NEAREST)
     image.alpha_composite(face, (box[0] + (box[2]-face.width)//2, box[1]))
 

@@ -1,13 +1,17 @@
 """Pinned weapon scope, recorded attack coverage, frame geometry and native pose regression."""
 import json
+import argparse
 from pathlib import Path
 from PIL import Image
 
 root=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--poses',type=Path,default=root/'artifacts/qa/poses')
+args=parser.parse_args()
 read=lambda name:json.loads((root/name).read_text())
 m=read('Riakawa/Assets/manifest.json');catalog=read('assets/vanilla-catalog.json')
 weapons={(w['itemId'],w['character']):w for w in m['weapons']}
-characters=['Chiikawa','Hachiware','Usagi']
+characters=[p['character'] for p in m['players']]
 native=read('artifacts/qa/native-defaults.json')['items']
 expected={int(id) for id,row in native.items() if (f:=row['fields'])['damage']>0 and
     f['useStyle']>0 and f['pick']==f['axe']==f['hammer']==0 and f['createTile']==-1 and not f['accessory']}
@@ -52,11 +56,11 @@ for b in bindings:
         if b['slot']=='Projectile' and b['id']==b['projectileId']:
             assert a['texture'] or a.get('visualMode')=='particles' or a['bindings'];continue
         assert any(x['slot']==b['slot'] and x['id']==b['id'] for x in a['bindings']),(b,char)
-poses=read('artifacts/qa/poses/results.json')
+poses=json.loads((args.poses/'results.json').read_text())
 assert {p['itemId'] for p in poses}==expected, f'Incomplete native pose run: {len(poses)}/{len(expected)}'
-cell=Image.open(root/f"artifacts/qa/poses/item-{poses[0]['itemId']}.png").height//4
+cell=Image.open(args.poses/f"item-{poses[0]['itemId']}.png").height//(len(characters)+1)
 for row in poses:
-    assert len(row['poses'])==48,row['itemId']
+    assert len(row['poses'])==(len(characters)+1)*12,row['itemId']
     for pose in row['poses']:
         native_pose=next(p for p in row['poses'] if p['character']=='Original' and p['orientation']==pose['orientation'] and p['phase']==pose['phase'])
         shift=(0 if pose['character']=='Original' else characters.index(pose['character'])+1)*cell

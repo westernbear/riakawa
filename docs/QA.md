@@ -11,14 +11,16 @@ Raw `artifacts/` paths refer to local generated evidence and are excluded from G
 | Core rules | `dotnet run --project checks/CoreChecks.csproj` | Packet bounds, sender checks, character values and emote cooldown |
 | Release assets | `python3 scripts/validate-assets.py --release` | Catalog coverage, paths, dimensions, approval records and music mapping; requires Pillow and ffprobe |
 | Weapon catalog | `python3 checks/CatalogChecks.py` | Weapons, ammunition and excluded tools; includes the throwable Snowball |
-| Artwork | `python3 checks/ArtChecks.py` | Texture dimensions, alpha, animation frames and native held poses |
+| Artwork | `python3 checks/ArtChecks.py --poses artifacts/qa/momonga/poses` | Texture dimensions, alpha, animation frames and 25,560 native held poses |
+| Momonga | `python3 checks/MomongaChecks.py` | Fourth-character assets, native bindings, distinct skins, voice formats and existing-art preservation |
 | Recorded attacks | `python3 checks/AppearanceChecks.py` | Standard uses, ammo cases, minions and repaired drawing paths |
 | Native defaults | `python3 checks/CombatChecks.py` | Separate runs with and without Riakawa; 5,455 items and 1,021 projectiles |
 | Live combat | `python3 checks/LiveCombatChecks.py NATIVE STYLED --full --output REPORT` | Every recorded simulation tick, including damage, timing, movement, collisions and resource payments |
 | Multiplayer | `python3 checks/ClientChecks.py` | Saved two-client observations, ownership and late-join state |
+| Momonga multiplayer | `python3 checks/MomongaNetworkChecks.py` | Two-client emotes, movement, settings, child ownership and existing summons after reconnect |
 | Ammo | `python3 checks/AmmoChecks.py` | 114 native firing cases and child-projectile mappings |
-| Voices | `python3 checks/VoiceChecks.py` | 15 two-client scenarios and six captured voice matches |
-| Sounds | `python3 checks/SoundChecks.py` | 39 weapon/instrument cues and nine voices |
+| Voices | `python3 checks/VoiceChecks.py --qa artifacts/qa/momonga --characters Momonga` | Seven two-client scenarios and two captured Momonga voice matches |
+| Sounds | `python3 checks/SoundChecks.py` | 52 weapon/instrument cues and twelve voices |
 | Music files | `python3 checks/AudioChecks.py` | Twelve decoded loops, clipping, numerical seams and 89 mapped copies |
 | Music playback | `python3 checks/MusicChecks.py` | Native selection/fades, nine captured tracks and volume-zero output |
 
@@ -39,7 +41,8 @@ remote instruments and per-listener voice settings. Key remapping and intentiona
 unbinding survive a restart. Dedicated servers load without client media access.
 
 The combat replay uses active native NPC AI in a disposable single-player arena.
-All 426 weapons are compared for each of the three characters: 360 ticks per weapon
+The original three characters were compared on version 0.1.0. Momonga uses a separate
+0.2.0 replay against the same native baseline: 426 weapons, 360 ticks per weapon
 with equal action seeds. No life, mana or ammo
 refills are used. See [Development](DEVELOPMENT.md) for the replay setup and the four excluded
 display/audio fields. Damage and all remaining AI fields are compared exactly.

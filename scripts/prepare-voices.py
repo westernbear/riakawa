@@ -4,13 +4,22 @@ import json
 import os
 import subprocess
 import wave
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 manifest_path = ROOT/'Riakawa/Assets/manifest.json'
 manifest = json.loads(manifest_path.read_text())
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--characters', nargs='+')
+args = parser.parse_args()
+if args.characters and set(args.characters)-{p['character'].lower() for p in manifest['players']}:
+    parser.error('Unknown character')
+count = 0
 for player in manifest['players']:
     name = player['character'].lower()
+    if args.characters and name not in args.characters:
+        continue
     for cue, limit in [('emote', 5), ('hurt', 1.5), ('death', 3.5)]:
         source = ROOT/f'artifacts/samples/voices/{name}-{cue}-draft.wav'
         asset = f'Assets/Sounds/{name}-{cue}'
@@ -27,5 +36,6 @@ for player in manifest['players']:
             assert (audio.getframerate(),audio.getnchannels(),audio.getsampwidth()) == (44100,1,2)
             assert 0 < audio.getnframes()/44100 < limit, f'{name}/{cue} unexpectedly long'
         player['voices'][cue] = asset
+        count += 1
 manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-print('PASS: nine voice cues, PCM16 mono 44.1 kHz; hurt <1.5s, death <3.5s, emote <5s')
+print(f'PASS: {count} voice cues, PCM16 mono 44.1 kHz; hurt <1.5s, death <3.5s, emote <5s')
