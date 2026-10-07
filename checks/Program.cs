@@ -25,4 +25,13 @@ Check(!SkinMotion.FastRun(6, 3, 3, true, true, false), "Normal running stays upr
 Check(!SkinMotion.FastRun(6, 3, 6, false, true, false), "Sliding stays upright");
 Check(!SkinMotion.FastRun(6, 3, 6, true, false, false), "Airborne stays upright");
 Check(!SkinMotion.FastRun(6, 3, 6, true, true, true), "Mount stays upright");
-Console.WriteLine("PASS: appearance protocol and Hermes-speed pose switch");
+int[] walkLoop = [0, 1, 2, 3, 2, 1];
+for (ulong tick = 0; tick < 126; tick++) {
+    int frame = SkinMotion.DoroWalkFrame(tick, 7);
+    Check(frame == walkLoop[(int)(tick / 7 % 6)], "Doro walk returns through middle poses");
+    if (tick > 0)
+        Check(Math.Abs(frame - SkinMotion.DoroWalkFrame(tick - 1, 7)) <= 1,
+            "Doro walk stays continuous across the loop boundary");
+}
+Check(SkinMotion.DoroWalkFrame(7, 0) == 1, "Walk frame duration is bounded");
+Console.WriteLine("PASS: appearance protocol, Hermes-speed pose switch and Doro walk loop");

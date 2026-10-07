@@ -85,8 +85,8 @@
         },
         "walk": {
           "row": 1,
-          "frames": 4,
-          "ticks": 7
+          "frames": 8,
+          "ticks": 4
         },
         "jump": {
           "row": 2,
@@ -96,27 +96,27 @@
         "swim": {
           "row": 3,
           "frames": 4,
-          "ticks": 7
+          "ticks": 8
         },
         "attack": {
           "row": 4,
           "frames": 4,
-          "ticks": 7
+          "ticks": 6
         },
         "mount": {
           "row": 5,
           "frames": 4,
-          "ticks": 7
+          "ticks": 16
         },
         "hurt": {
           "row": 6,
           "frames": 4,
-          "ticks": 7
+          "ticks": 4
         },
         "death": {
           "row": 7,
           "frames": 4,
-          "ticks": 7
+          "ticks": 12
         }
       }
     },

@@ -26,6 +26,13 @@ public readonly record struct CosmeticMessage(byte Player, Character Character)
 
 public static class SkinMotion
 {
+    // Return through the middle poses instead of jumping from the last to the first.
+    public static int DoroWalkFrame(ulong tick, int ticksPerFrame)
+    {
+        int phase = (int)(tick / (uint)Math.Max(1, ticksPerFrame) % 6);
+        return phase < 4 ? phase : 6 - phase;
+    }
+
     // Matches the midpoint used by Terraria's Hermes-style run sound and dust.
     public static bool FastRun(float velocityX, float normalSpeed, float sprintSpeed,
         bool movingWithInput, bool grounded, bool mounted) =>
