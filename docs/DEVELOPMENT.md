@@ -26,6 +26,6 @@ The helper in `Core/CosmeticState.cs` is checked by `checks/Program.cs`.
 
 Hachiware and Doro were made with the PixelLab API from the supplied character
 references. PixelLab generated the base sprites and movement frames. The frames
-were aligned to the sheet grid, and Doro's eyes and running mouth were retouched.
+were aligned to the sheet grid, and the reference face was aligned across Doro's poses.
 The supplied animation guided Doro's running pose. The API key stays outside
 the repository.
