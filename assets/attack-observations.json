@@ -1,0 +1,2877 @@
+{
+  "reviewed": false,
+  "sources": [
+    "artifacts/qa/first-sweep",
+    "artifacts/qa/full-native-sweep",
+    "artifacts/qa/mace-native.json",
+    "artifacts/qa/minion-sweep",
+    "artifacts/qa/tiered-branches",
+    "artifacts/qa/shader-trails",
+    "artifacts/qa/ammo-sweep",
+    "artifacts/qa/appearance-two.attacks.json",
+    "artifacts/qa/appearance-standard/attacks.json",
+    "artifacts/qa/appearance-ammo/attacks.json"
+  ],
+  "edges": [
+    {
+      "weaponId": 6,
+      "parentProjectileId": 0,
+      "projectileId": 940
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 2
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 4
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 5
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 41
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 91
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 103
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 172
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 225
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 278
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 282
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 474
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 639
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 0,
+      "projectileId": 1006
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 91,
+      "projectileId": 92
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 92,
+      "projectileId": 92
+    },
+    {
+      "weaponId": 39,
+      "parentProjectileId": 639,
+      "projectileId": 640
+    },
+    {
+      "weaponId": 42,
+      "parentProjectileId": 0,
+      "projectileId": 3
+    },
+    {
+      "weaponId": 44,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 46,
+      "parentProjectileId": 0,
+      "projectileId": 974
+    },
+    {
+      "weaponId": 55,
+      "parentProjectileId": 0,
+      "projectileId": 6
+    },
+    {
+      "weaponId": 64,
+      "parentProjectileId": 0,
+      "projectileId": 7
+    },
+    {
+      "weaponId": 64,
+      "parentProjectileId": 7,
+      "projectileId": 7
+    },
+    {
+      "weaponId": 64,
+      "parentProjectileId": 7,
+      "projectileId": 8
+    },
+    {
+      "weaponId": 65,
+      "parentProjectileId": 0,
+      "projectileId": 9
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 36
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 89
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 104
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 207
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 242
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 279
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 283
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 284
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 285
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 286
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 287
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 638
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 0,
+      "projectileId": 981
+    },
+    {
+      "weaponId": 95,
+      "parentProjectileId": 89,
+      "projectileId": 90
+    },
+    {
+      "weaponId": 96,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 98,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 99,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 112,
+      "parentProjectileId": 0,
+      "projectileId": 15
+    },
+    {
+      "weaponId": 113,
+      "parentProjectileId": 0,
+      "projectileId": 16
+    },
+    {
+      "weaponId": 119,
+      "parentProjectileId": 0,
+      "projectileId": 19
+    },
+    {
+      "weaponId": 120,
+      "parentProjectileId": 0,
+      "projectileId": 2
+    },
+    {
+      "weaponId": 121,
+      "parentProjectileId": 0,
+      "projectileId": 978
+    },
+    {
+      "weaponId": 127,
+      "parentProjectileId": 0,
+      "projectileId": 20
+    },
+    {
+      "weaponId": 154,
+      "parentProjectileId": 0,
+      "projectileId": 21
+    },
+    {
+      "weaponId": 155,
+      "parentProjectileId": 0,
+      "projectileId": 977
+    },
+    {
+      "weaponId": 157,
+      "parentProjectileId": 0,
+      "projectileId": 22
+    },
+    {
+      "weaponId": 160,
+      "parentProjectileId": 0,
+      "projectileId": 23
+    },
+    {
+      "weaponId": 161,
+      "parentProjectileId": 0,
+      "projectileId": 24
+    },
+    {
+      "weaponId": 162,
+      "parentProjectileId": 0,
+      "projectileId": 25
+    },
+    {
+      "weaponId": 163,
+      "parentProjectileId": 0,
+      "projectileId": 26
+    },
+    {
+      "weaponId": 164,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 165,
+      "parentProjectileId": 0,
+      "projectileId": 27
+    },
+    {
+      "weaponId": 168,
+      "parentProjectileId": 0,
+      "projectileId": 30
+    },
+    {
+      "weaponId": 190,
+      "parentProjectileId": 0,
+      "projectileId": 976
+    },
+    {
+      "weaponId": 191,
+      "parentProjectileId": 0,
+      "projectileId": 33
+    },
+    {
+      "weaponId": 197,
+      "parentProjectileId": 0,
+      "projectileId": 955
+    },
+    {
+      "weaponId": 218,
+      "parentProjectileId": 0,
+      "projectileId": 34
+    },
+    {
+      "weaponId": 219,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 220,
+      "parentProjectileId": 0,
+      "projectileId": 35
+    },
+    {
+      "weaponId": 266,
+      "parentProjectileId": 0,
+      "projectileId": 42
+    },
+    {
+      "weaponId": 266,
+      "parentProjectileId": 0,
+      "projectileId": 65
+    },
+    {
+      "weaponId": 266,
+      "parentProjectileId": 0,
+      "projectileId": 68
+    },
+    {
+      "weaponId": 266,
+      "parentProjectileId": 0,
+      "projectileId": 354
+    },
+    {
+      "weaponId": 272,
+      "parentProjectileId": 0,
+      "projectileId": 45
+    },
+    {
+      "weaponId": 273,
+      "parentProjectileId": 0,
+      "projectileId": 972
+    },
+    {
+      "weaponId": 274,
+      "parentProjectileId": 0,
+      "projectileId": 46
+    },
+    {
+      "weaponId": 277,
+      "parentProjectileId": 0,
+      "projectileId": 47
+    },
+    {
+      "weaponId": 279,
+      "parentProjectileId": 0,
+      "projectileId": 48
+    },
+    {
+      "weaponId": 280,
+      "parentProjectileId": 0,
+      "projectileId": 49
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 0,
+      "projectileId": 51
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 0,
+      "projectileId": 267
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 0,
+      "projectileId": 477
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 0,
+      "projectileId": 478
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 0,
+      "projectileId": 479
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 478,
+      "projectileId": 480
+    },
+    {
+      "weaponId": 284,
+      "parentProjectileId": 0,
+      "projectileId": 52
+    },
+    {
+      "weaponId": 287,
+      "parentProjectileId": 0,
+      "projectileId": 54
+    },
+    {
+      "weaponId": 368,
+      "parentProjectileId": 0,
+      "projectileId": 982
+    },
+    {
+      "weaponId": 389,
+      "parentProjectileId": 0,
+      "projectileId": 63
+    },
+    {
+      "weaponId": 390,
+      "parentProjectileId": 0,
+      "projectileId": 64
+    },
+    {
+      "weaponId": 406,
+      "parentProjectileId": 0,
+      "projectileId": 66
+    },
+    {
+      "weaponId": 422,
+      "parentProjectileId": 0,
+      "projectileId": 69
+    },
+    {
+      "weaponId": 423,
+      "parentProjectileId": 0,
+      "projectileId": 70
+    },
+    {
+      "weaponId": 434,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 435,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 436,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 481,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 486,
+      "parentProjectileId": 0,
+      "projectileId": 842
+    },
+    {
+      "weaponId": 494,
+      "parentProjectileId": 0,
+      "projectileId": 76
+    },
+    {
+      "weaponId": 494,
+      "parentProjectileId": 0,
+      "projectileId": 77
+    },
+    {
+      "weaponId": 494,
+      "parentProjectileId": 0,
+      "projectileId": 78
+    },
+    {
+      "weaponId": 495,
+      "parentProjectileId": 0,
+      "projectileId": 79
+    },
+    {
+      "weaponId": 496,
+      "parentProjectileId": 0,
+      "projectileId": 80
+    },
+    {
+      "weaponId": 506,
+      "parentProjectileId": 0,
+      "projectileId": 85
+    },
+    {
+      "weaponId": 514,
+      "parentProjectileId": 0,
+      "projectileId": 88
+    },
+    {
+      "weaponId": 517,
+      "parentProjectileId": 0,
+      "projectileId": 93
+    },
+    {
+      "weaponId": 518,
+      "parentProjectileId": 0,
+      "projectileId": 94
+    },
+    {
+      "weaponId": 519,
+      "parentProjectileId": 0,
+      "projectileId": 95
+    },
+    {
+      "weaponId": 533,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 534,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 537,
+      "parentProjectileId": 0,
+      "projectileId": 97
+    },
+    {
+      "weaponId": 550,
+      "parentProjectileId": 0,
+      "projectileId": 105
+    },
+    {
+      "weaponId": 561,
+      "parentProjectileId": 0,
+      "projectileId": 106
+    },
+    {
+      "weaponId": 578,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 655,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 658,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 661,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 670,
+      "parentProjectileId": 0,
+      "projectileId": 113
+    },
+    {
+      "weaponId": 674,
+      "parentProjectileId": 0,
+      "projectileId": 982
+    },
+    {
+      "weaponId": 674,
+      "parentProjectileId": 0,
+      "projectileId": 983
+    },
+    {
+      "weaponId": 675,
+      "parentProjectileId": 0,
+      "projectileId": 972
+    },
+    {
+      "weaponId": 675,
+      "parentProjectileId": 0,
+      "projectileId": 973
+    },
+    {
+      "weaponId": 676,
+      "parentProjectileId": 0,
+      "projectileId": 119
+    },
+    {
+      "weaponId": 679,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 682,
+      "parentProjectileId": 0,
+      "projectileId": 117
+    },
+    {
+      "weaponId": 683,
+      "parentProjectileId": 0,
+      "projectileId": 114
+    },
+    {
+      "weaponId": 723,
+      "parentProjectileId": 0,
+      "projectileId": 116
+    },
+    {
+      "weaponId": 724,
+      "parentProjectileId": 0,
+      "projectileId": 118
+    },
+    {
+      "weaponId": 725,
+      "parentProjectileId": 0,
+      "projectileId": 120
+    },
+    {
+      "weaponId": 726,
+      "parentProjectileId": 0,
+      "projectileId": 359
+    },
+    {
+      "weaponId": 739,
+      "parentProjectileId": 0,
+      "projectileId": 121
+    },
+    {
+      "weaponId": 740,
+      "parentProjectileId": 0,
+      "projectileId": 122
+    },
+    {
+      "weaponId": 741,
+      "parentProjectileId": 0,
+      "projectileId": 123
+    },
+    {
+      "weaponId": 742,
+      "parentProjectileId": 0,
+      "projectileId": 124
+    },
+    {
+      "weaponId": 743,
+      "parentProjectileId": 0,
+      "projectileId": 125
+    },
+    {
+      "weaponId": 744,
+      "parentProjectileId": 0,
+      "projectileId": 126
+    },
+    {
+      "weaponId": 756,
+      "parentProjectileId": 0,
+      "projectileId": 130
+    },
+    {
+      "weaponId": 756,
+      "parentProjectileId": 130,
+      "projectileId": 131
+    },
+    {
+      "weaponId": 757,
+      "parentProjectileId": 0,
+      "projectileId": 984
+    },
+    {
+      "weaponId": 757,
+      "parentProjectileId": 0,
+      "projectileId": 985
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 133
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 136
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 139
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 142
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 777
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 781
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 785
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 788
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 791
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 794
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 797
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 0,
+      "projectileId": 800
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 777,
+      "projectileId": 779
+    },
+    {
+      "weaponId": 758,
+      "parentProjectileId": 781,
+      "projectileId": 783
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 134
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 137
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 140
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 143
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 776
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 780
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 784
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 787
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 790
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 793
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 796
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 0,
+      "projectileId": 799
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 776,
+      "projectileId": 779
+    },
+    {
+      "weaponId": 759,
+      "parentProjectileId": 780,
+      "projectileId": 783
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 135
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 138
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 141
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 144
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 778
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 782
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 786
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 789
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 792
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 795
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 798
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 0,
+      "projectileId": 801
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 778,
+      "projectileId": 779
+    },
+    {
+      "weaponId": 760,
+      "parentProjectileId": 782,
+      "projectileId": 783
+    },
+    {
+      "weaponId": 788,
+      "parentProjectileId": 0,
+      "projectileId": 150
+    },
+    {
+      "weaponId": 788,
+      "parentProjectileId": 150,
+      "projectileId": 151
+    },
+    {
+      "weaponId": 788,
+      "parentProjectileId": 151,
+      "projectileId": 150
+    },
+    {
+      "weaponId": 788,
+      "parentProjectileId": 151,
+      "projectileId": 152
+    },
+    {
+      "weaponId": 795,
+      "parentProjectileId": 0,
+      "projectileId": 975
+    },
+    {
+      "weaponId": 796,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 800,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 801,
+      "parentProjectileId": 0,
+      "projectileId": 154
+    },
+    {
+      "weaponId": 802,
+      "parentProjectileId": 0,
+      "projectileId": 153
+    },
+    {
+      "weaponId": 923,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 930,
+      "parentProjectileId": 0,
+      "projectileId": 163
+    },
+    {
+      "weaponId": 930,
+      "parentProjectileId": 0,
+      "projectileId": 310
+    },
+    {
+      "weaponId": 930,
+      "parentProjectileId": 0,
+      "projectileId": 1008
+    },
+    {
+      "weaponId": 930,
+      "parentProjectileId": 0,
+      "projectileId": 1009
+    },
+    {
+      "weaponId": 930,
+      "parentProjectileId": 0,
+      "projectileId": 1010
+    },
+    {
+      "weaponId": 930,
+      "parentProjectileId": 0,
+      "projectileId": 1011
+    },
+    {
+      "weaponId": 949,
+      "parentProjectileId": 0,
+      "projectileId": 166
+    },
+    {
+      "weaponId": 964,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 986,
+      "parentProjectileId": 0,
+      "projectileId": 51
+    },
+    {
+      "weaponId": 989,
+      "parentProjectileId": 0,
+      "projectileId": 173
+    },
+    {
+      "weaponId": 1121,
+      "parentProjectileId": 0,
+      "projectileId": 181
+    },
+    {
+      "weaponId": 1122,
+      "parentProjectileId": 0,
+      "projectileId": 182
+    },
+    {
+      "weaponId": 1123,
+      "parentProjectileId": 0,
+      "projectileId": 181
+    },
+    {
+      "weaponId": 1130,
+      "parentProjectileId": 0,
+      "projectileId": 183
+    },
+    {
+      "weaponId": 1130,
+      "parentProjectileId": 183,
+      "projectileId": 181
+    },
+    {
+      "weaponId": 1155,
+      "parentProjectileId": 0,
+      "projectileId": 189
+    },
+    {
+      "weaponId": 1156,
+      "parentProjectileId": 0,
+      "projectileId": 190
+    },
+    {
+      "weaponId": 1157,
+      "parentProjectileId": 0,
+      "projectileId": 191
+    },
+    {
+      "weaponId": 1157,
+      "parentProjectileId": 0,
+      "projectileId": 192
+    },
+    {
+      "weaponId": 1157,
+      "parentProjectileId": 0,
+      "projectileId": 193
+    },
+    {
+      "weaponId": 1157,
+      "parentProjectileId": 0,
+      "projectileId": 194
+    },
+    {
+      "weaponId": 1157,
+      "parentProjectileId": 194,
+      "projectileId": 195
+    },
+    {
+      "weaponId": 1178,
+      "parentProjectileId": 0,
+      "projectileId": 206
+    },
+    {
+      "weaponId": 1186,
+      "parentProjectileId": 0,
+      "projectileId": 212
+    },
+    {
+      "weaponId": 1187,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 1193,
+      "parentProjectileId": 0,
+      "projectileId": 215
+    },
+    {
+      "weaponId": 1194,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 1200,
+      "parentProjectileId": 0,
+      "projectileId": 218
+    },
+    {
+      "weaponId": 1201,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 1226,
+      "parentProjectileId": 0,
+      "projectileId": 229
+    },
+    {
+      "weaponId": 1227,
+      "parentProjectileId": 0,
+      "projectileId": 228
+    },
+    {
+      "weaponId": 1228,
+      "parentProjectileId": 0,
+      "projectileId": 222
+    },
+    {
+      "weaponId": 1228,
+      "parentProjectileId": 222,
+      "projectileId": 228
+    },
+    {
+      "weaponId": 1229,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 1244,
+      "parentProjectileId": 0,
+      "projectileId": 237
+    },
+    {
+      "weaponId": 1244,
+      "parentProjectileId": 237,
+      "projectileId": 238
+    },
+    {
+      "weaponId": 1254,
+      "parentProjectileId": 0,
+      "projectileId": 242
+    },
+    {
+      "weaponId": 1255,
+      "parentProjectileId": 0,
+      "projectileId": 242
+    },
+    {
+      "weaponId": 1256,
+      "parentProjectileId": 0,
+      "projectileId": 243
+    },
+    {
+      "weaponId": 1256,
+      "parentProjectileId": 243,
+      "projectileId": 244
+    },
+    {
+      "weaponId": 1258,
+      "parentProjectileId": 0,
+      "projectileId": 246
+    },
+    {
+      "weaponId": 1258,
+      "parentProjectileId": 246,
+      "projectileId": 249
+    },
+    {
+      "weaponId": 1259,
+      "parentProjectileId": 0,
+      "projectileId": 247
+    },
+    {
+      "weaponId": 1259,
+      "parentProjectileId": 247,
+      "projectileId": 248
+    },
+    {
+      "weaponId": 1260,
+      "parentProjectileId": 0,
+      "projectileId": 250
+    },
+    {
+      "weaponId": 1260,
+      "parentProjectileId": 250,
+      "projectileId": 251
+    },
+    {
+      "weaponId": 1264,
+      "parentProjectileId": 0,
+      "projectileId": 253
+    },
+    {
+      "weaponId": 1265,
+      "parentProjectileId": 0,
+      "projectileId": 242
+    },
+    {
+      "weaponId": 1266,
+      "parentProjectileId": 0,
+      "projectileId": 254
+    },
+    {
+      "weaponId": 1266,
+      "parentProjectileId": 254,
+      "projectileId": 255
+    },
+    {
+      "weaponId": 1295,
+      "parentProjectileId": 0,
+      "projectileId": 260
+    },
+    {
+      "weaponId": 1296,
+      "parentProjectileId": 0,
+      "projectileId": 261
+    },
+    {
+      "weaponId": 1297,
+      "parentProjectileId": 0,
+      "projectileId": 262
+    },
+    {
+      "weaponId": 1306,
+      "parentProjectileId": 0,
+      "projectileId": 263
+    },
+    {
+      "weaponId": 1308,
+      "parentProjectileId": 0,
+      "projectileId": 265
+    },
+    {
+      "weaponId": 1309,
+      "parentProjectileId": 0,
+      "projectileId": 266
+    },
+    {
+      "weaponId": 1313,
+      "parentProjectileId": 0,
+      "projectileId": 837
+    },
+    {
+      "weaponId": 1314,
+      "parentProjectileId": 0,
+      "projectileId": 271
+    },
+    {
+      "weaponId": 1319,
+      "parentProjectileId": 0,
+      "projectileId": 166
+    },
+    {
+      "weaponId": 1324,
+      "parentProjectileId": 0,
+      "projectileId": 272
+    },
+    {
+      "weaponId": 1325,
+      "parentProjectileId": 0,
+      "projectileId": 273
+    },
+    {
+      "weaponId": 1327,
+      "parentProjectileId": 0,
+      "projectileId": 274
+    },
+    {
+      "weaponId": 1336,
+      "parentProjectileId": 0,
+      "projectileId": 280
+    },
+    {
+      "weaponId": 1444,
+      "parentProjectileId": 0,
+      "projectileId": 294
+    },
+    {
+      "weaponId": 1445,
+      "parentProjectileId": 0,
+      "projectileId": 295
+    },
+    {
+      "weaponId": 1445,
+      "parentProjectileId": 295,
+      "projectileId": 296
+    },
+    {
+      "weaponId": 1446,
+      "parentProjectileId": 0,
+      "projectileId": 297
+    },
+    {
+      "weaponId": 1513,
+      "parentProjectileId": 0,
+      "projectileId": 301
+    },
+    {
+      "weaponId": 1553,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 1569,
+      "parentProjectileId": 0,
+      "projectileId": 304
+    },
+    {
+      "weaponId": 1569,
+      "parentProjectileId": 304,
+      "projectileId": 305
+    },
+    {
+      "weaponId": 1571,
+      "parentProjectileId": 0,
+      "projectileId": 306
+    },
+    {
+      "weaponId": 1571,
+      "parentProjectileId": 306,
+      "projectileId": 307
+    },
+    {
+      "weaponId": 1572,
+      "parentProjectileId": 0,
+      "projectileId": 308
+    },
+    {
+      "weaponId": 1572,
+      "parentProjectileId": 308,
+      "projectileId": 309
+    },
+    {
+      "weaponId": 1782,
+      "parentProjectileId": 0,
+      "projectileId": 311
+    },
+    {
+      "weaponId": 1784,
+      "parentProjectileId": 0,
+      "projectileId": 312
+    },
+    {
+      "weaponId": 1801,
+      "parentProjectileId": 0,
+      "projectileId": 316
+    },
+    {
+      "weaponId": 1802,
+      "parentProjectileId": 0,
+      "projectileId": 317
+    },
+    {
+      "weaponId": 1809,
+      "parentProjectileId": 0,
+      "projectileId": 318
+    },
+    {
+      "weaponId": 1825,
+      "parentProjectileId": 0,
+      "projectileId": 320
+    },
+    {
+      "weaponId": 1826,
+      "parentProjectileId": 0,
+      "projectileId": 321
+    },
+    {
+      "weaponId": 1826,
+      "parentProjectileId": 0,
+      "projectileId": 997
+    },
+    {
+      "weaponId": 1835,
+      "parentProjectileId": 0,
+      "projectileId": 323
+    },
+    {
+      "weaponId": 1870,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 1910,
+      "parentProjectileId": 0,
+      "projectileId": 85
+    },
+    {
+      "weaponId": 1913,
+      "parentProjectileId": 0,
+      "projectileId": 330
+    },
+    {
+      "weaponId": 1918,
+      "parentProjectileId": 0,
+      "projectileId": 333
+    },
+    {
+      "weaponId": 1928,
+      "parentProjectileId": 0,
+      "projectileId": 907
+    },
+    {
+      "weaponId": 1928,
+      "parentProjectileId": 907,
+      "projectileId": 335
+    },
+    {
+      "weaponId": 1929,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 1930,
+      "parentProjectileId": 0,
+      "projectileId": 336
+    },
+    {
+      "weaponId": 1931,
+      "parentProjectileId": 0,
+      "projectileId": 337
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 338
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 339
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 340
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 341
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 803
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 804
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 805
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 806
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 807
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 808
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 809
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 0,
+      "projectileId": 810
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 803,
+      "projectileId": 862
+    },
+    {
+      "weaponId": 1946,
+      "parentProjectileId": 804,
+      "projectileId": 863
+    },
+    {
+      "weaponId": 1947,
+      "parentProjectileId": 0,
+      "projectileId": 342
+    },
+    {
+      "weaponId": 1947,
+      "parentProjectileId": 342,
+      "projectileId": 343
+    },
+    {
+      "weaponId": 1947,
+      "parentProjectileId": 343,
+      "projectileId": 344
+    },
+    {
+      "weaponId": 2188,
+      "parentProjectileId": 0,
+      "projectileId": 355
+    },
+    {
+      "weaponId": 2223,
+      "parentProjectileId": 0,
+      "projectileId": 357
+    },
+    {
+      "weaponId": 2269,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 2270,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 2331,
+      "parentProjectileId": 0,
+      "projectileId": 367
+    },
+    {
+      "weaponId": 2332,
+      "parentProjectileId": 0,
+      "projectileId": 368
+    },
+    {
+      "weaponId": 2364,
+      "parentProjectileId": 0,
+      "projectileId": 373
+    },
+    {
+      "weaponId": 2364,
+      "parentProjectileId": 373,
+      "projectileId": 374
+    },
+    {
+      "weaponId": 2365,
+      "parentProjectileId": 0,
+      "projectileId": 375
+    },
+    {
+      "weaponId": 2365,
+      "parentProjectileId": 375,
+      "projectileId": 376
+    },
+    {
+      "weaponId": 2366,
+      "parentProjectileId": 0,
+      "projectileId": 377
+    },
+    {
+      "weaponId": 2366,
+      "parentProjectileId": 377,
+      "projectileId": 378
+    },
+    {
+      "weaponId": 2366,
+      "parentProjectileId": 378,
+      "projectileId": 379
+    },
+    {
+      "weaponId": 2424,
+      "parentProjectileId": 0,
+      "projectileId": 383
+    },
+    {
+      "weaponId": 2515,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 2535,
+      "parentProjectileId": 0,
+      "projectileId": 387
+    },
+    {
+      "weaponId": 2535,
+      "parentProjectileId": 0,
+      "projectileId": 388
+    },
+    {
+      "weaponId": 2535,
+      "parentProjectileId": 387,
+      "projectileId": 389
+    },
+    {
+      "weaponId": 2551,
+      "parentProjectileId": 0,
+      "projectileId": 390
+    },
+    {
+      "weaponId": 2551,
+      "parentProjectileId": 0,
+      "projectileId": 391
+    },
+    {
+      "weaponId": 2551,
+      "parentProjectileId": 0,
+      "projectileId": 392
+    },
+    {
+      "weaponId": 2584,
+      "parentProjectileId": 0,
+      "projectileId": 393
+    },
+    {
+      "weaponId": 2584,
+      "parentProjectileId": 0,
+      "projectileId": 394
+    },
+    {
+      "weaponId": 2584,
+      "parentProjectileId": 0,
+      "projectileId": 395
+    },
+    {
+      "weaponId": 2586,
+      "parentProjectileId": 0,
+      "projectileId": 397
+    },
+    {
+      "weaponId": 2590,
+      "parentProjectileId": 0,
+      "projectileId": 399
+    },
+    {
+      "weaponId": 2590,
+      "parentProjectileId": 399,
+      "projectileId": 400
+    },
+    {
+      "weaponId": 2590,
+      "parentProjectileId": 399,
+      "projectileId": 401
+    },
+    {
+      "weaponId": 2590,
+      "parentProjectileId": 399,
+      "projectileId": 402
+    },
+    {
+      "weaponId": 2611,
+      "parentProjectileId": 0,
+      "projectileId": 404
+    },
+    {
+      "weaponId": 2621,
+      "parentProjectileId": 0,
+      "projectileId": 407
+    },
+    {
+      "weaponId": 2621,
+      "parentProjectileId": 407,
+      "projectileId": 408
+    },
+    {
+      "weaponId": 2622,
+      "parentProjectileId": 0,
+      "projectileId": 409
+    },
+    {
+      "weaponId": 2623,
+      "parentProjectileId": 0,
+      "projectileId": 410
+    },
+    {
+      "weaponId": 2624,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 2747,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 2749,
+      "parentProjectileId": 0,
+      "projectileId": 423
+    },
+    {
+      "weaponId": 2749,
+      "parentProjectileId": 423,
+      "projectileId": 433
+    },
+    {
+      "weaponId": 2750,
+      "parentProjectileId": 0,
+      "projectileId": 424
+    },
+    {
+      "weaponId": 2750,
+      "parentProjectileId": 0,
+      "projectileId": 425
+    },
+    {
+      "weaponId": 2750,
+      "parentProjectileId": 0,
+      "projectileId": 426
+    },
+    {
+      "weaponId": 2795,
+      "parentProjectileId": 0,
+      "projectileId": 439
+    },
+    {
+      "weaponId": 2795,
+      "parentProjectileId": 439,
+      "projectileId": 440
+    },
+    {
+      "weaponId": 2796,
+      "parentProjectileId": 0,
+      "projectileId": 442
+    },
+    {
+      "weaponId": 2796,
+      "parentProjectileId": 442,
+      "projectileId": 443
+    },
+    {
+      "weaponId": 2797,
+      "parentProjectileId": 0,
+      "projectileId": 444
+    },
+    {
+      "weaponId": 2797,
+      "parentProjectileId": 444,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 2880,
+      "parentProjectileId": 0,
+      "projectileId": 451
+    },
+    {
+      "weaponId": 2882,
+      "parentProjectileId": 0,
+      "projectileId": 460
+    },
+    {
+      "weaponId": 2882,
+      "parentProjectileId": 460,
+      "projectileId": 459
+    },
+    {
+      "weaponId": 2882,
+      "parentProjectileId": 460,
+      "projectileId": 461
+    },
+    {
+      "weaponId": 2888,
+      "parentProjectileId": 0,
+      "projectileId": 469
+    },
+    {
+      "weaponId": 2888,
+      "parentProjectileId": 469,
+      "projectileId": 181
+    },
+    {
+      "weaponId": 3006,
+      "parentProjectileId": 0,
+      "projectileId": 476
+    },
+    {
+      "weaponId": 3007,
+      "parentProjectileId": 0,
+      "projectileId": 51
+    },
+    {
+      "weaponId": 3008,
+      "parentProjectileId": 0,
+      "projectileId": 51
+    },
+    {
+      "weaponId": 3012,
+      "parentProjectileId": 0,
+      "projectileId": 481
+    },
+    {
+      "weaponId": 3014,
+      "parentProjectileId": 0,
+      "projectileId": 482
+    },
+    {
+      "weaponId": 3018,
+      "parentProjectileId": 0,
+      "projectileId": 483
+    },
+    {
+      "weaponId": 3018,
+      "parentProjectileId": 483,
+      "projectileId": 484
+    },
+    {
+      "weaponId": 3019,
+      "parentProjectileId": 0,
+      "projectileId": 485
+    },
+    {
+      "weaponId": 3029,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3030,
+      "parentProjectileId": 0,
+      "projectileId": 491
+    },
+    {
+      "weaponId": 3051,
+      "parentProjectileId": 0,
+      "projectileId": 494
+    },
+    {
+      "weaponId": 3051,
+      "parentProjectileId": 494,
+      "projectileId": 493
+    },
+    {
+      "weaponId": 3051,
+      "parentProjectileId": 494,
+      "projectileId": 494
+    },
+    {
+      "weaponId": 3052,
+      "parentProjectileId": 0,
+      "projectileId": 495
+    },
+    {
+      "weaponId": 3053,
+      "parentProjectileId": 0,
+      "projectileId": 496
+    },
+    {
+      "weaponId": 3054,
+      "parentProjectileId": 0,
+      "projectileId": 497
+    },
+    {
+      "weaponId": 3063,
+      "parentProjectileId": 0,
+      "projectileId": 502
+    },
+    {
+      "weaponId": 3065,
+      "parentProjectileId": 0,
+      "projectileId": 503
+    },
+    {
+      "weaponId": 3069,
+      "parentProjectileId": 0,
+      "projectileId": 954
+    },
+    {
+      "weaponId": 3094,
+      "parentProjectileId": 0,
+      "projectileId": 507
+    },
+    {
+      "weaponId": 3105,
+      "parentProjectileId": 0,
+      "projectileId": 510
+    },
+    {
+      "weaponId": 3105,
+      "parentProjectileId": 510,
+      "projectileId": 511
+    },
+    {
+      "weaponId": 3105,
+      "parentProjectileId": 510,
+      "projectileId": 512
+    },
+    {
+      "weaponId": 3105,
+      "parentProjectileId": 510,
+      "projectileId": 513
+    },
+    {
+      "weaponId": 3107,
+      "parentProjectileId": 0,
+      "projectileId": 514
+    },
+    {
+      "weaponId": 3116,
+      "parentProjectileId": 0,
+      "projectileId": 517
+    },
+    {
+      "weaponId": 3197,
+      "parentProjectileId": 0,
+      "projectileId": 520
+    },
+    {
+      "weaponId": 3209,
+      "parentProjectileId": 0,
+      "projectileId": 521
+    },
+    {
+      "weaponId": 3209,
+      "parentProjectileId": 521,
+      "projectileId": 522
+    },
+    {
+      "weaponId": 3210,
+      "parentProjectileId": 0,
+      "projectileId": 523
+    },
+    {
+      "weaponId": 3211,
+      "parentProjectileId": 0,
+      "projectileId": 524
+    },
+    {
+      "weaponId": 3249,
+      "parentProjectileId": 0,
+      "projectileId": 533
+    },
+    {
+      "weaponId": 3262,
+      "parentProjectileId": 0,
+      "projectileId": 534
+    },
+    {
+      "weaponId": 3269,
+      "parentProjectileId": 0,
+      "projectileId": 535
+    },
+    {
+      "weaponId": 3269,
+      "parentProjectileId": 535,
+      "projectileId": 536
+    },
+    {
+      "weaponId": 3278,
+      "parentProjectileId": 0,
+      "projectileId": 541
+    },
+    {
+      "weaponId": 3279,
+      "parentProjectileId": 0,
+      "projectileId": 542
+    },
+    {
+      "weaponId": 3280,
+      "parentProjectileId": 0,
+      "projectileId": 543
+    },
+    {
+      "weaponId": 3281,
+      "parentProjectileId": 0,
+      "projectileId": 544
+    },
+    {
+      "weaponId": 3282,
+      "parentProjectileId": 0,
+      "projectileId": 545
+    },
+    {
+      "weaponId": 3283,
+      "parentProjectileId": 0,
+      "projectileId": 546
+    },
+    {
+      "weaponId": 3284,
+      "parentProjectileId": 0,
+      "projectileId": 547
+    },
+    {
+      "weaponId": 3285,
+      "parentProjectileId": 0,
+      "projectileId": 548
+    },
+    {
+      "weaponId": 3286,
+      "parentProjectileId": 0,
+      "projectileId": 549
+    },
+    {
+      "weaponId": 3287,
+      "parentProjectileId": 0,
+      "projectileId": 550
+    },
+    {
+      "weaponId": 3288,
+      "parentProjectileId": 0,
+      "projectileId": 551
+    },
+    {
+      "weaponId": 3289,
+      "parentProjectileId": 0,
+      "projectileId": 552
+    },
+    {
+      "weaponId": 3290,
+      "parentProjectileId": 0,
+      "projectileId": 553
+    },
+    {
+      "weaponId": 3291,
+      "parentProjectileId": 0,
+      "projectileId": 554
+    },
+    {
+      "weaponId": 3292,
+      "parentProjectileId": 0,
+      "projectileId": 555
+    },
+    {
+      "weaponId": 3315,
+      "parentProjectileId": 0,
+      "projectileId": 562
+    },
+    {
+      "weaponId": 3316,
+      "parentProjectileId": 0,
+      "projectileId": 563
+    },
+    {
+      "weaponId": 3317,
+      "parentProjectileId": 0,
+      "projectileId": 564
+    },
+    {
+      "weaponId": 3350,
+      "parentProjectileId": 0,
+      "projectileId": 587
+    },
+    {
+      "weaponId": 3368,
+      "parentProjectileId": 0,
+      "projectileId": 595
+    },
+    {
+      "weaponId": 3377,
+      "parentProjectileId": 0,
+      "projectileId": 597
+    },
+    {
+      "weaponId": 3378,
+      "parentProjectileId": 0,
+      "projectileId": 598
+    },
+    {
+      "weaponId": 3379,
+      "parentProjectileId": 0,
+      "projectileId": 599
+    },
+    {
+      "weaponId": 3389,
+      "parentProjectileId": 0,
+      "projectileId": 603
+    },
+    {
+      "weaponId": 3389,
+      "parentProjectileId": 603,
+      "projectileId": 604
+    },
+    {
+      "weaponId": 3473,
+      "parentProjectileId": 0,
+      "projectileId": 611
+    },
+    {
+      "weaponId": 3473,
+      "parentProjectileId": 611,
+      "projectileId": 612
+    },
+    {
+      "weaponId": 3474,
+      "parentProjectileId": 0,
+      "projectileId": 613
+    },
+    {
+      "weaponId": 3474,
+      "parentProjectileId": 613,
+      "projectileId": 614
+    },
+    {
+      "weaponId": 3475,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 3475,
+      "parentProjectileId": 0,
+      "projectileId": 615
+    },
+    {
+      "weaponId": 3475,
+      "parentProjectileId": 0,
+      "projectileId": 616
+    },
+    {
+      "weaponId": 3476,
+      "parentProjectileId": 0,
+      "projectileId": 617
+    },
+    {
+      "weaponId": 3476,
+      "parentProjectileId": 617,
+      "projectileId": 618
+    },
+    {
+      "weaponId": 3476,
+      "parentProjectileId": 617,
+      "projectileId": 620
+    },
+    {
+      "weaponId": 3477,
+      "parentProjectileId": 0,
+      "projectileId": 621
+    },
+    {
+      "weaponId": 3480,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3483,
+      "parentProjectileId": 0,
+      "projectileId": 945
+    },
+    {
+      "weaponId": 3486,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3489,
+      "parentProjectileId": 0,
+      "projectileId": 943
+    },
+    {
+      "weaponId": 3492,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3495,
+      "parentProjectileId": 0,
+      "projectileId": 941
+    },
+    {
+      "weaponId": 3498,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3501,
+      "parentProjectileId": 0,
+      "projectileId": 939
+    },
+    {
+      "weaponId": 3504,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3507,
+      "parentProjectileId": 0,
+      "projectileId": 938
+    },
+    {
+      "weaponId": 3510,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3513,
+      "parentProjectileId": 0,
+      "projectileId": 942
+    },
+    {
+      "weaponId": 3516,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3519,
+      "parentProjectileId": 0,
+      "projectileId": 944
+    },
+    {
+      "weaponId": 3531,
+      "parentProjectileId": 0,
+      "projectileId": 625
+    },
+    {
+      "weaponId": 3531,
+      "parentProjectileId": 0,
+      "projectileId": 626
+    },
+    {
+      "weaponId": 3531,
+      "parentProjectileId": 0,
+      "projectileId": 627
+    },
+    {
+      "weaponId": 3531,
+      "parentProjectileId": 0,
+      "projectileId": 628
+    },
+    {
+      "weaponId": 3540,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 3540,
+      "parentProjectileId": 0,
+      "projectileId": 630
+    },
+    {
+      "weaponId": 3540,
+      "parentProjectileId": 1,
+      "projectileId": 631
+    },
+    {
+      "weaponId": 3541,
+      "parentProjectileId": 0,
+      "projectileId": 633
+    },
+    {
+      "weaponId": 3541,
+      "parentProjectileId": 633,
+      "projectileId": 632
+    },
+    {
+      "weaponId": 3542,
+      "parentProjectileId": 0,
+      "projectileId": 634
+    },
+    {
+      "weaponId": 3542,
+      "parentProjectileId": 0,
+      "projectileId": 635
+    },
+    {
+      "weaponId": 3543,
+      "parentProjectileId": 0,
+      "projectileId": 636
+    },
+    {
+      "weaponId": 3543,
+      "parentProjectileId": 636,
+      "projectileId": 953
+    },
+    {
+      "weaponId": 3546,
+      "parentProjectileId": 0,
+      "projectileId": 167
+    },
+    {
+      "weaponId": 3546,
+      "parentProjectileId": 0,
+      "projectileId": 168
+    },
+    {
+      "weaponId": 3546,
+      "parentProjectileId": 0,
+      "projectileId": 169
+    },
+    {
+      "weaponId": 3546,
+      "parentProjectileId": 0,
+      "projectileId": 170
+    },
+    {
+      "weaponId": 3548,
+      "parentProjectileId": 0,
+      "projectileId": 588
+    },
+    {
+      "weaponId": 3569,
+      "parentProjectileId": 0,
+      "projectileId": 641
+    },
+    {
+      "weaponId": 3569,
+      "parentProjectileId": 641,
+      "projectileId": 642
+    },
+    {
+      "weaponId": 3570,
+      "parentProjectileId": 0,
+      "projectileId": 645
+    },
+    {
+      "weaponId": 3571,
+      "parentProjectileId": 0,
+      "projectileId": 643
+    },
+    {
+      "weaponId": 3571,
+      "parentProjectileId": 643,
+      "projectileId": 644
+    },
+    {
+      "weaponId": 3779,
+      "parentProjectileId": 0,
+      "projectileId": 659
+    },
+    {
+      "weaponId": 3787,
+      "parentProjectileId": 0,
+      "projectileId": 660
+    },
+    {
+      "weaponId": 3788,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 3788,
+      "parentProjectileId": 0,
+      "projectileId": 661
+    },
+    {
+      "weaponId": 3818,
+      "parentProjectileId": 0,
+      "projectileId": 663
+    },
+    {
+      "weaponId": 3818,
+      "parentProjectileId": 663,
+      "projectileId": 664
+    },
+    {
+      "weaponId": 3819,
+      "parentProjectileId": 0,
+      "projectileId": 665
+    },
+    {
+      "weaponId": 3819,
+      "parentProjectileId": 665,
+      "projectileId": 666
+    },
+    {
+      "weaponId": 3820,
+      "parentProjectileId": 0,
+      "projectileId": 667
+    },
+    {
+      "weaponId": 3820,
+      "parentProjectileId": 667,
+      "projectileId": 668
+    },
+    {
+      "weaponId": 3821,
+      "parentProjectileId": 0,
+      "projectileId": 669
+    },
+    {
+      "weaponId": 3824,
+      "parentProjectileId": 0,
+      "projectileId": 677
+    },
+    {
+      "weaponId": 3824,
+      "parentProjectileId": 677,
+      "projectileId": 680
+    },
+    {
+      "weaponId": 3825,
+      "parentProjectileId": 0,
+      "projectileId": 678
+    },
+    {
+      "weaponId": 3825,
+      "parentProjectileId": 678,
+      "projectileId": 680
+    },
+    {
+      "weaponId": 3826,
+      "parentProjectileId": 0,
+      "projectileId": 679
+    },
+    {
+      "weaponId": 3826,
+      "parentProjectileId": 679,
+      "projectileId": 680
+    },
+    {
+      "weaponId": 3827,
+      "parentProjectileId": 0,
+      "projectileId": 684
+    },
+    {
+      "weaponId": 3829,
+      "parentProjectileId": 0,
+      "projectileId": 688
+    },
+    {
+      "weaponId": 3830,
+      "parentProjectileId": 0,
+      "projectileId": 689
+    },
+    {
+      "weaponId": 3831,
+      "parentProjectileId": 0,
+      "projectileId": 690
+    },
+    {
+      "weaponId": 3832,
+      "parentProjectileId": 0,
+      "projectileId": 691
+    },
+    {
+      "weaponId": 3833,
+      "parentProjectileId": 0,
+      "projectileId": 692
+    },
+    {
+      "weaponId": 3834,
+      "parentProjectileId": 0,
+      "projectileId": 693
+    },
+    {
+      "weaponId": 3835,
+      "parentProjectileId": 0,
+      "projectileId": 697
+    },
+    {
+      "weaponId": 3835,
+      "parentProjectileId": 697,
+      "projectileId": 698
+    },
+    {
+      "weaponId": 3836,
+      "parentProjectileId": 0,
+      "projectileId": 699
+    },
+    {
+      "weaponId": 3836,
+      "parentProjectileId": 699,
+      "projectileId": 700
+    },
+    {
+      "weaponId": 3852,
+      "parentProjectileId": 0,
+      "projectileId": 704
+    },
+    {
+      "weaponId": 3852,
+      "parentProjectileId": 0,
+      "projectileId": 712
+    },
+    {
+      "weaponId": 3854,
+      "parentProjectileId": 0,
+      "projectileId": 2
+    },
+    {
+      "weaponId": 3854,
+      "parentProjectileId": 0,
+      "projectileId": 705
+    },
+    {
+      "weaponId": 3854,
+      "parentProjectileId": 0,
+      "projectileId": 706
+    },
+    {
+      "weaponId": 3858,
+      "parentProjectileId": 0,
+      "projectileId": 707
+    },
+    {
+      "weaponId": 3858,
+      "parentProjectileId": 0,
+      "projectileId": 708
+    },
+    {
+      "weaponId": 3858,
+      "parentProjectileId": 708,
+      "projectileId": 709
+    },
+    {
+      "weaponId": 3858,
+      "parentProjectileId": 709,
+      "projectileId": 443
+    },
+    {
+      "weaponId": 3859,
+      "parentProjectileId": 0,
+      "projectileId": 710
+    },
+    {
+      "weaponId": 3859,
+      "parentProjectileId": 710,
+      "projectileId": 710
+    },
+    {
+      "weaponId": 3870,
+      "parentProjectileId": 0,
+      "projectileId": 711
+    },
+    {
+      "weaponId": 3930,
+      "parentProjectileId": 0,
+      "projectileId": 714
+    },
+    {
+      "weaponId": 3930,
+      "parentProjectileId": 0,
+      "projectileId": 715
+    },
+    {
+      "weaponId": 3930,
+      "parentProjectileId": 0,
+      "projectileId": 716
+    },
+    {
+      "weaponId": 3930,
+      "parentProjectileId": 0,
+      "projectileId": 717
+    },
+    {
+      "weaponId": 3930,
+      "parentProjectileId": 0,
+      "projectileId": 718
+    },
+    {
+      "weaponId": 4060,
+      "parentProjectileId": 0,
+      "projectileId": 728
+    },
+    {
+      "weaponId": 4060,
+      "parentProjectileId": 728,
+      "projectileId": 729
+    },
+    {
+      "weaponId": 4061,
+      "parentProjectileId": 0,
+      "projectileId": 730
+    },
+    {
+      "weaponId": 4061,
+      "parentProjectileId": 730,
+      "projectileId": 732
+    },
+    {
+      "weaponId": 4062,
+      "parentProjectileId": 0,
+      "projectileId": 731
+    },
+    {
+      "weaponId": 4144,
+      "parentProjectileId": 0,
+      "projectileId": 735
+    },
+    {
+      "weaponId": 4269,
+      "parentProjectileId": 0,
+      "projectileId": 755
+    },
+    {
+      "weaponId": 4270,
+      "parentProjectileId": 0,
+      "projectileId": 756
+    },
+    {
+      "weaponId": 4272,
+      "parentProjectileId": 0,
+      "projectileId": 757
+    },
+    {
+      "weaponId": 4273,
+      "parentProjectileId": 0,
+      "projectileId": 758
+    },
+    {
+      "weaponId": 4281,
+      "parentProjectileId": 0,
+      "projectileId": 759
+    },
+    {
+      "weaponId": 4343,
+      "parentProjectileId": 0,
+      "projectileId": 761
+    },
+    {
+      "weaponId": 4344,
+      "parentProjectileId": 0,
+      "projectileId": 762
+    },
+    {
+      "weaponId": 4347,
+      "parentProjectileId": 0,
+      "projectileId": 876
+    },
+    {
+      "weaponId": 4348,
+      "parentProjectileId": 0,
+      "projectileId": 876
+    },
+    {
+      "weaponId": 4381,
+      "parentProjectileId": 0,
+      "projectileId": 819
+    },
+    {
+      "weaponId": 4463,
+      "parentProjectileId": 0,
+      "projectileId": 802
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 0,
+      "projectileId": 831
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 0,
+      "projectileId": 833
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 0,
+      "projectileId": 834
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 0,
+      "projectileId": 835
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 833,
+      "projectileId": 818
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 834,
+      "projectileId": 818
+    },
+    {
+      "weaponId": 4607,
+      "parentProjectileId": 835,
+      "projectileId": 818
+    },
+    {
+      "weaponId": 4672,
+      "parentProjectileId": 0,
+      "projectileId": 841
+    },
+    {
+      "weaponId": 4678,
+      "parentProjectileId": 0,
+      "projectileId": 847
+    },
+    {
+      "weaponId": 4679,
+      "parentProjectileId": 0,
+      "projectileId": 848
+    },
+    {
+      "weaponId": 4680,
+      "parentProjectileId": 0,
+      "projectileId": 849
+    },
+    {
+      "weaponId": 4703,
+      "parentProjectileId": 0,
+      "projectileId": 14
+    },
+    {
+      "weaponId": 4715,
+      "parentProjectileId": 0,
+      "projectileId": 856
+    },
+    {
+      "weaponId": 4758,
+      "parentProjectileId": 0,
+      "projectileId": 864
+    },
+    {
+      "weaponId": 4760,
+      "parentProjectileId": 0,
+      "projectileId": 866
+    },
+    {
+      "weaponId": 4764,
+      "parentProjectileId": 0,
+      "projectileId": 867
+    },
+    {
+      "weaponId": 4788,
+      "parentProjectileId": 0,
+      "projectileId": 877
+    },
+    {
+      "weaponId": 4789,
+      "parentProjectileId": 0,
+      "projectileId": 878
+    },
+    {
+      "weaponId": 4790,
+      "parentProjectileId": 0,
+      "projectileId": 879
+    },
+    {
+      "weaponId": 4818,
+      "parentProjectileId": 0,
+      "projectileId": 902
+    },
+    {
+      "weaponId": 4911,
+      "parentProjectileId": 0,
+      "projectileId": 912
+    },
+    {
+      "weaponId": 4911,
+      "parentProjectileId": 912,
+      "projectileId": 917
+    },
+    {
+      "weaponId": 4912,
+      "parentProjectileId": 0,
+      "projectileId": 913
+    },
+    {
+      "weaponId": 4913,
+      "parentProjectileId": 0,
+      "projectileId": 914
+    },
+    {
+      "weaponId": 4914,
+      "parentProjectileId": 0,
+      "projectileId": 915
+    },
+    {
+      "weaponId": 4923,
+      "parentProjectileId": 0,
+      "projectileId": 927
+    },
+    {
+      "weaponId": 4952,
+      "parentProjectileId": 0,
+      "projectileId": 931
+    },
+    {
+      "weaponId": 4953,
+      "parentProjectileId": 0,
+      "projectileId": 932
+    },
+    {
+      "weaponId": 4956,
+      "parentProjectileId": 0,
+      "projectileId": 933
+    },
+    {
+      "weaponId": 5005,
+      "parentProjectileId": 0,
+      "projectileId": 946
+    },
+    {
+      "weaponId": 5011,
+      "parentProjectileId": 0,
+      "projectileId": 947
+    },
+    {
+      "weaponId": 5012,
+      "parentProjectileId": 0,
+      "projectileId": 948
+    },
+    {
+      "weaponId": 5065,
+      "parentProjectileId": 0,
+      "projectileId": 950
+    },
+    {
+      "weaponId": 5069,
+      "parentProjectileId": 0,
+      "projectileId": 951
+    },
+    {
+      "weaponId": 5074,
+      "parentProjectileId": 0,
+      "projectileId": 952
+    },
+    {
+      "weaponId": 5094,
+      "parentProjectileId": 0,
+      "projectileId": 971
+    },
+    {
+      "weaponId": 5114,
+      "parentProjectileId": 0,
+      "projectileId": 963
+    },
+    {
+      "weaponId": 5114,
+      "parentProjectileId": 0,
+      "projectileId": 970
+    },
+    {
+      "weaponId": 5117,
+      "parentProjectileId": 0,
+      "projectileId": 968
+    },
+    {
+      "weaponId": 5118,
+      "parentProjectileId": 0,
+      "projectileId": 969
+    },
+    {
+      "weaponId": 5119,
+      "parentProjectileId": 0,
+      "projectileId": 966
+    },
+    {
+      "weaponId": 5119,
+      "parentProjectileId": 966,
+      "projectileId": 967
+    },
+    {
+      "weaponId": 5147,
+      "parentProjectileId": 0,
+      "projectileId": 979
+    },
+    {
+      "weaponId": 5282,
+      "parentProjectileId": 0,
+      "projectileId": 1
+    },
+    {
+      "weaponId": 5294,
+      "parentProjectileId": 0,
+      "projectileId": 999
+    },
+    {
+      "weaponId": 5294,
+      "parentProjectileId": 999,
+      "projectileId": 181
+    },
+    {
+      "weaponId": 5298,
+      "parentProjectileId": 0,
+      "projectileId": 1000
+    },
+    {
+      "weaponId": 5382,
+      "parentProjectileId": 0,
+      "projectileId": 1012
+    },
+    {
+      "weaponId": 2611,
+      "parentProjectileId": 404,
+      "projectileId": 405
+    },
+    {
+      "weaponId": 281,
+      "parentProjectileId": 479,
+      "projectileId": 479
+    }
+  ]
+}

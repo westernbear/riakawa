@@ -1,0 +1,6 @@
+displayName = Riakawa
+author = Riakawa contributors
+version = 0.1.0
+side = Both
+includeSource = false
+buildIgnore = bin/*, obj/*, *.csproj, icon_small.png

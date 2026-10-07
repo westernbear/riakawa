@@ -1,0 +1,20 @@
+{
+  "status": "direction-approved",
+  "approval": "User: 현재 방향 유지",
+  "preview": "artifacts/samples/voices/hurt-death-preview.mp3",
+  "cues": [
+    "chiikawa-hurt",
+    "chiikawa-death",
+    "hachiware-hurt",
+    "hachiware-death",
+    "usagi-hurt",
+    "usagi-death"
+  ],
+  "runtimeVerification": "passed: 15 two-client cases and six waveform matches",
+  "emoteListeningApproved": false,
+  "evidence": [
+    "artifacts/qa/voice-build.json",
+    "artifacts/qa/voice-matrix/results.json",
+    "artifacts/qa/voice-capture-checks.json"
+  ]
+}

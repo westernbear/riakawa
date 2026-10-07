@@ -1,0 +1,21 @@
+{
+  "status": "reference-approved",
+  "characters": {
+    "Chiikawa": "artifacts/samples/pixel-polished/chiikawa-idle-draft.png",
+    "Hachiware": "artifacts/samples/pixel-polished/hachiware-idle-draft.png",
+    "Usagi": "artifacts/samples/pixel-polished/usagi-idle-draft.png"
+  },
+  "preview": "artifacts/samples/pixel-polished/preview.png",
+  "previousFeedback": "Closer to the original character design",
+  "productionSheetApproved": false,
+  "referenceApproved": true,
+  "approval": "User: 이 도트로 진행",
+  "weaponDirectionApproved": true,
+  "weaponDirectionPreview": "artifacts/samples/pixel-polished/special-weapons.png",
+  "weaponApproval": "User: 이 방향으로 나머지 무기도 진행",
+  "technicalReview": {
+    "report": "docs/APPEARANCE-REVIEW.md",
+    "status": "passed within documented runtime and static coverage",
+    "replacesUserApproval": false
+  }
+}

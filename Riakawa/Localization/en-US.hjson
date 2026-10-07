@@ -1,0 +1,90 @@
+Mods: {
+	Riakawa: {
+		Keybinds.Emote.DisplayName: Emote
+
+		Emotes: {
+			Chiikawa: Waa!
+			Hachiware: It will work out!
+			Usagi: Yaha!
+		}
+
+		Configs: {
+			RiakawaConfig: {
+				DisplayName: Riakawa appearance
+
+				InterfaceLanguage: {
+					Label: Language / 한국어
+					Tooltip: Change Riakawa text. Save and reopen the config to refresh labels.
+				}
+
+				Character: {
+					Label: Character
+					Tooltip: Change appearance without changing combat stats.
+				}
+
+				ReplaceWeapons: {
+					Label: Weapon appearances
+					Tooltip: Show character designs for weapons and their attacks.
+				}
+
+				Voices: {
+					Label: Character voices
+					Tooltip: Replace hurt, death and emote voices when available.
+				}
+
+				SoundEffects: {
+					Label: Attack sounds
+					Tooltip: Replace sounds from player weapons and their projectiles.
+				}
+
+				Decorations: {
+					Label: Emote effects
+					Tooltip: Show cosmetic emote expressions.
+				}
+
+				ReducedEffects: {
+					Label: Reduce animation
+					Tooltip: Keep idle and emote animations still.
+				}
+			}
+
+			InterfaceLanguage: {
+				English: {
+					Label: English
+					Tooltip: ""
+				}
+
+				Korean: {
+					Label: 한국어
+					Tooltip: ""
+				}
+
+				Tooltip: ""
+			}
+
+			Character: {
+				Original: {
+					Label: Original
+					Tooltip: ""
+				}
+
+				Chiikawa: {
+					Label: Chiikawa
+					Tooltip: ""
+				}
+
+				Hachiware: {
+					Label: Hachiware
+					Tooltip: ""
+				}
+
+				Usagi: {
+					Label: Usagi
+					Tooltip: ""
+				}
+
+				Tooltip: ""
+			}
+		}
+	}
+}

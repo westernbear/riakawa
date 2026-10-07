@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-07T01:26:04.6280699Z",
+  "loaded": 2983,
+  "audio": 48,
+  "cases": 1278,
+  "scope": "Packaged assets loaded through tModLoader; real inventory/world/held hooks called through the FNA graphics device. Static render contract only, not live alignment or combat parity.",
+  "modSha256": "d4c439a72dc688938e8486d9666f925c26074f537758b13d3baa199a849429a0"
+}

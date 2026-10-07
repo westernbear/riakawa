@@ -1,0 +1,254 @@
+[
+  {
+    "character": "Chiikawa",
+    "expected": "idle",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:120 Y:0 Width:40 Height:56}"
+  },
+  {
+    "character": "Chiikawa",
+    "expected": "mount",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": true,
+    "frame": "{X:120 Y:280 Width:40 Height:56}"
+  },
+  {
+    "character": "Chiikawa",
+    "expected": "walk",
+    "itemAnimation": 4,
+    "velocity": [
+      3.484801,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:80 Y:56 Width:40 Height:56}"
+  },
+  {
+    "character": "Chiikawa",
+    "expected": "mount",
+    "itemAnimation": 14,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": true,
+    "frame": "{X:120 Y:280 Width:40 Height:56}"
+  },
+  {
+    "character": "Chiikawa",
+    "expected": "jump",
+    "itemAnimation": 14,
+    "velocity": [
+      0,
+      -6.109999
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:0 Y:112 Width:40 Height:56}"
+  },
+  {
+    "character": "Hachiware",
+    "expected": "walk",
+    "itemAnimation": 8,
+    "velocity": [
+      3.0976007,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:40 Y:56 Width:40 Height:56}"
+  },
+  {
+    "character": "Hachiware",
+    "expected": "mount",
+    "itemAnimation": 12,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": true,
+    "frame": "{X:80 Y:280 Width:40 Height:56}"
+  },
+  {
+    "character": "Hachiware",
+    "expected": "jump",
+    "itemAnimation": 13,
+    "velocity": [
+      0,
+      -6.6099987
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:0 Y:112 Width:40 Height:56}"
+  },
+  {
+    "character": "Usagi",
+    "expected": "walk",
+    "itemAnimation": 18,
+    "velocity": [
+      3.4720013,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:0 Y:56 Width:40 Height:56}"
+  },
+  {
+    "character": "Usagi",
+    "expected": "mount",
+    "itemAnimation": 4,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": true,
+    "frame": "{X:80 Y:280 Width:40 Height:56}"
+  },
+  {
+    "character": "Usagi",
+    "expected": "jump",
+    "itemAnimation": 5,
+    "velocity": [
+      0,
+      -7.0099983
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:0 Y:112 Width:40 Height:56}"
+  },
+  {
+    "character": "Chiikawa",
+    "expected": "swim",
+    "itemAnimation": 18,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": true,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:40 Y:168 Width:40 Height:56}"
+  },
+  {
+    "character": "Hachiware",
+    "expected": "swim",
+    "itemAnimation": 2,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": true,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:120 Y:168 Width:40 Height:56}"
+  },
+  {
+    "character": "Usagi",
+    "expected": "swim",
+    "itemAnimation": 13,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": true,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:0 Y:168 Width:40 Height:56}"
+  },
+  {
+    "character": "Usagi",
+    "expected": "invisible",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": true,
+    "gravDir": 1,
+    "mount": false,
+    "frame": null
+  },
+  {
+    "character": "Usagi",
+    "expected": "jump",
+    "itemAnimation": 19,
+    "velocity": [
+      0,
+      -6.400001
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": -1,
+    "mount": false,
+    "frame": "{X:40 Y:112 Width:40 Height:56}"
+  },
+  {
+    "character": "Usagi",
+    "expected": "invisible",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": true,
+    "gravDir": 1,
+    "mount": false,
+    "frame": null
+  },
+  {
+    "character": "Chiikawa",
+    "expected": "death",
+    "itemAnimation": 0,
+    "velocity": [
+      0,
+      0
+    ],
+    "wet": false,
+    "invis": false,
+    "gravDir": 1,
+    "mount": false,
+    "frame": "{X:120 Y:392 Width:40 Height:56}"
+  }
+]

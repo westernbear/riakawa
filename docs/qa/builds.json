@@ -1,0 +1,24 @@
+{
+  "appearance-sweep-build.json": {
+    "dist/Riakawa.tmod": "d4cd5d92aaebb3ebd9e39e33c94101a7020085453385521b1c2c4c1f6443eecf",
+    ".tools/tml-save/Mods/GameChecks.tmod": "5fdd83f5cd8dfea06b6bb9e5f7e0937a730685826c68dff0768f5e1509aae6f8",
+    "testedPackage": "artifacts/qa/appearance-sweep-Riakawa.tmod"
+  },
+  "appearance-final-build.json": {
+    "dist/Riakawa.tmod": "48661a8620ef6d6e9d8053efa04a66f99da138801abdc40908a46d4823bcee26",
+    ".tools/tml-save/Mods/GameChecks.tmod": "0b79677e354025462fe1d62c5cbf78a461174eb1a73eba55dffa99f6fd54df8a",
+    "testedPackage": "artifacts/qa/appearance-held-Riakawa.tmod"
+  },
+  "appearance-corrected-build.json": {
+    "dist/Riakawa.tmod": "ae4110c703124ebfd54d403207443e7f357ae6b2f2c308dafaced16b9931d843",
+    "Riakawa/Assets/manifest.json": "e3dbe048247bcaa697aa481fbc0d9be70e9bc7de2393c504b153432ff8d9af6e",
+    ".tools/tml-save/Mods/GameChecks.tmod": "86520a686e8e2968703e34796d635f24fee95e324055851f0519fcb0385ae156",
+    "testedPackage": "artifacts/qa/appearance-attack-Riakawa.tmod"
+  },
+  "appearance-movement-build.json": {
+    "dist/Riakawa.tmod": "d4c439a72dc688938e8486d9666f925c26074f537758b13d3baa199a849429a0",
+    ".tools/tml-save/Mods/GameChecks.tmod": "9d83117594ba28024ac5c9d2df02ed1864702bb12bcf114c1261ba72c444a143",
+    "Riakawa/CharacterLayer.cs": "f1c0a59ac4578637a2f5da9b9093a4714c4e698f3da3ef1996ec5bd2c4d62c7c",
+    "Riakawa/CharacterHands.cs": "81fec00fa6fed9f43e746ddd23dca3021f9c3cfa035190290fa7dc7543b58d2c"
+  }
+}

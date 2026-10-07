@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="GameChecks/**/*.cs;CombatProbe/**/*.cs" />
+    <Compile Include="../Riakawa/Core/CosmeticState.cs" Link="CosmeticState.cs" />
+  </ItemGroup>
+</Project>

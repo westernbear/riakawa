@@ -1,0 +1,7 @@
+displayName = Riakawa development checks
+author = Riakawa contributors
+version = 0.1.0
+side = Both
+modReferences = Riakawa
+includeSource = false
+buildIgnore = bin/*, obj/*, *.csproj

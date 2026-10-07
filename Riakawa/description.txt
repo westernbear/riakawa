@@ -1,0 +1,3 @@
+Chiikawa, Hachiware and Usagi cosmetic mod for Terraria 1.4.4.9 / tModLoader v2026.08.3.0.
+Development build. Unfinished assets fall back to Terraria visuals. No combat stats are changed.
+Music is delivered separately as the Riakawa Music resource pack.

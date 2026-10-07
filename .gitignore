@@ -1,0 +1,10 @@
+.tools/
+.gstack/
+**/bin/
+**/obj/
+**/__pycache__/
+dist/
+artifacts/
+.env
+.env.*
+*.pem
