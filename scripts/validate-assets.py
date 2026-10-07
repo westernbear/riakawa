@@ -41,6 +41,11 @@ def validate(release=False):
                     assert tile.getbbox() is not None, (name, pose, frame)
                     assert tile.getpixel((0, 0))[3] == 0 and tile.getpixel((width-1, height-1))[3] == 0, (name, pose, frame)
             assert len(rows) == len(art['animations']), name
+            if name == 'Doro':
+                run_y = art['animations']['run']['row']*height
+                faces = {image.crop((frame*width+7, run_y+37, frame*width+55, run_y+81)).tobytes()
+                         for frame in range(4)}
+                assert len(faces) == 1, 'Doro run face must stay still'
         head = art['head']
         assert len(head) == 4 and 0 <= head[0] < width and 0 <= head[1] < height and head[2] > 0 and head[3] > 0
         assert head[0]+head[2] <= width and head[1]+head[3] <= height, name
