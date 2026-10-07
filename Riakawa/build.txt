@@ -1,7 +1,7 @@
 displayName = Riakawa
 author = Riakawa contributors
 homepage = https://github.com/westernbear/riakawa
-version = 0.3.0
+version = 0.3.1
 side = Both
 includeSource = false
 buildIgnore = bin/*, obj/*, *.csproj, icon_small.png
