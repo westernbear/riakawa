@@ -14,7 +14,7 @@ Mods: {
 
 				InterfaceLanguage: {
 					Label: Language / 한국어
-					Tooltip: Change Riakawa text. Save and reopen the config to refresh labels.
+					Tooltip: Choose the language for Riakawa settings and emotes. Save and reopen settings to apply.
 				}
 
 				Character: {
@@ -29,7 +29,7 @@ Mods: {
 
 				Voices: {
 					Label: Character voices
-					Tooltip: Replace hurt, death and emote voices when available.
+					Tooltip: Use character voices for hurt, death and emotes.
 				}
 
 				SoundEffects: {
@@ -38,13 +38,13 @@ Mods: {
 				}
 
 				Decorations: {
-					Label: Emote effects
-					Tooltip: Show cosmetic emote expressions.
+					Label: Decorative effects
+					Tooltip: Show emote text and character-themed attack particles.
 				}
 
 				ReducedEffects: {
-					Label: Reduce animation
-					Tooltip: Keep idle and emote animations still.
+					Label: Reduce effects
+					Tooltip: Pause idle and emote animations and show fewer attack particles.
 				}
 			}
 

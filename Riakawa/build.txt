@@ -1,5 +1,6 @@
 displayName = Riakawa
 author = Riakawa contributors
+homepage = https://github.com/westernbear/riakawa
 version = 0.1.0
 side = Both
 includeSource = false

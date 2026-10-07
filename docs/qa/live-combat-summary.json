@@ -1,0 +1,50 @@
+{
+  "tModLoader": "2026.8.3.0",
+  "packageSha256": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd",
+  "characters": [
+    "Chiikawa",
+    "Hachiware",
+    "Usagi"
+  ],
+  "weaponsPerCharacter": 426,
+  "ticksPerWeapon": 360,
+  "comparedTicks": 460080,
+  "status": "pass",
+  "conditions": "Clear-noon arena, active native Blue Slime/Zombie/Cave Bat AI, initial 400 life/200 mana, no resource refill, attack input window ticks 1 through 180. Matching action seeds and native biome refresh each tick. Draws occur between batches of 256 simulation ticks.",
+  "excludedCosmeticFields": "docs/qa/combat-cosmetic-fields.json",
+  "cases": {
+    "chiikawa": "docs/qa/live-combat-chiikawa.json",
+    "hachiware": "docs/qa/live-combat-hachiware.json",
+    "usagi": "docs/qa/live-combat-usagi.json"
+  },
+  "builds": {
+    "native": {
+      "packages": {
+        "CombatProbe.tmod": "c5630adf66ddeee24d088b37708fa264c042fde8a47e2c6a034fb10355d4a139"
+      },
+      "probeSourceSha256": "c682d0755be9748a9323697aa2c4b8821b0706a0f300c5e99a88ca5d132140ce"
+    },
+    "chiikawa": {
+      "packages": {
+        "CombatProbe.tmod": "c5630adf66ddeee24d088b37708fa264c042fde8a47e2c6a034fb10355d4a139",
+        "Riakawa.tmod": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd"
+      },
+      "probeSourceSha256": "c682d0755be9748a9323697aa2c4b8821b0706a0f300c5e99a88ca5d132140ce"
+    },
+    "hachiware": {
+      "packages": {
+        "CombatProbe.tmod": "c5630adf66ddeee24d088b37708fa264c042fde8a47e2c6a034fb10355d4a139",
+        "Riakawa.tmod": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd"
+      },
+      "probeSourceSha256": "c682d0755be9748a9323697aa2c4b8821b0706a0f300c5e99a88ca5d132140ce"
+    },
+    "usagi": {
+      "packages": {
+        "CombatProbe.tmod": "c5630adf66ddeee24d088b37708fa264c042fde8a47e2c6a034fb10355d4a139",
+        "Riakawa.tmod": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd"
+      },
+      "probeSourceSha256": "c682d0755be9748a9323697aa2c4b8821b0706a0f300c5e99a88ca5d132140ce"
+    }
+  },
+  "limits": "Single-player arena replay. Does not certify every alternate input, equipment/terrain combination, random stream or network timing."
+}

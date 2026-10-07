@@ -1,0 +1,15 @@
+{
+  "reviewedUtc": "2026-10-07T02:03:31.617611+00:00",
+  "reviewer": "development review",
+  "status": "art and catalog approved; combat and Workshop installation remain separate gates",
+  "playerSheets": 3,
+  "weapons": 426,
+  "weaponVariants": 1278,
+  "userReferenceApproval": "assets/art-review.json",
+  "evidence": {
+    "report": "docs/APPEARANCE-REVIEW.md",
+    "art": "docs/qa/art-checks.json",
+    "appearance": "docs/qa/appearance-checks.json"
+  },
+  "scope": "All player frames and weapon designs; 20,448 native held poses; 426 standard uses, 114 ammo cases, 38 single-cast summons and repaired draw paths. This is developer release acceptance, not an additional user approval of every individual image. Unexecuted rare equipment/terrain/AI combinations are not certified."
+}

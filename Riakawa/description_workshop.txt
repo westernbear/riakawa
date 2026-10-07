@@ -1,0 +1,26 @@
+[h1]Riakawa: Chiikawa, Hachiware & Usagi[/h1]
+치이카와·하치와레·우사기로 테라리아를 모험하세요. 캐릭터, 무기 외형, 공격 연출과 소리를 바꾸며 기본 게임의 전투 수치와 진행은 유지합니다.
+
+Play Terraria as Chiikawa, Hachiware or Usagi. Character-specific skins for 426 vanilla weapons, attack effects, custom voices and emotes. Native combat stats, collision and progression are preserved.
+
+[h2]In the mod / 모드 구성[/h2]
+[list]
+[*]Three animated characters; armor and body accessories hidden, wings and mounts retained.
+[*]1,278 weapon variants covering inventory, dropped and held items, with projectiles, minions, whips, beams and chains.
+[*]Press V to emote. Rebind in Controls. Emotes do not interrupt movement or combat.
+[*]Character and emote synchronization in multiplayer.
+[*]Korean / English settings: restore Original appearance, switch characters, toggle visuals, voices and effects.
+[/list]
+
+[h2]Install / 설치[/h2]
+PC Steam Terraria 1.4.4.9 / tModLoader v2026.08.3.0.
+Subscribe and enable Riakawa in tModLoader's Mods menu. Choose a character in Mod Configuration. Install the music pack separately and enable it in Use Resource Packs.
+구독 후 모드 메뉴에서 활성화하세요. 캐릭터·효과음은 모드 설정에서, 감정표현 키는 조작 설정에서 변경합니다.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3815008011]Riakawa Music / 음악 팩[/url]
+
+[h2]Credits[/h2]
+Unofficial, noncommercial fan project. Chiikawa belongs to Nagano and the respective rights holders. Weapon skins adapt Terraria silhouettes; this mod does not add new weapons or change enemies, NPCs or terrain. AI-assisted assets and synthesized character voices; no actor recordings are included.
+
+[url=https://github.com/westernbear/riakawa]Source, screenshots and support[/url]
+[url=https://github.com/westernbear/riakawa/blob/main/docs/CREDITS.md]Full credits and licenses[/url]

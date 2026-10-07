@@ -17,7 +17,8 @@ recordings or the original Terraria soundtrack. The project and supplied music
 pack are distributed for noncommercial use.
 
 Generation settings, model file hashes and processing records are retained with
-the development sources. Music is still awaiting full listening and game checks.
+the development sources. The user approved all twelve final tracks and their loops
+on 2026-10-07; the exact audio hashes are in `assets/music-review.json`.
 
 ## Artwork and voices
 
@@ -27,7 +28,7 @@ for reference art; its samples were rejected for likeness.
 [Official character reference](https://www.anime-chiikawa.jp/chara.html):
 © Nagano / Chiikawa Production Committee. Used to guide pixel silhouette and
 face studies; original reference files are not included in the mod package.
-The batch weapon, projectile and secondary-effect drafts adapt Terraria's installed weapon silhouettes, by
+The batch weapon, projectile and secondary-effect artwork adapts Terraria's installed weapon silhouettes, by
 Re-Logic, with new palettes and character ornaments. These are derivative fan
 skins; the five initial weapon sets were drawn separately. Native reference
 exports are retained locally for alignment and are not shipped as original files.
@@ -38,10 +39,8 @@ recording is used. Model revisions, seeds, reference hashes and the generation
 environment are recorded with the source samples; outer silence is trimmed and
 the cues are normalized to mono PCM16 at 44.1 kHz.
 
-This credits file records tools used or under evaluation, not asset approval.
-
 [JavaScript sfxr](https://github.com/chr15m/jsfxr) 1.4.1, by Eric Fredricksen
-and Chris McCormick (Unlicense), generated the procedural effect samples and 39 short drafts: 21 character/weapon-family effects and 18 three-note instrument chords.
+and Chris McCormick (Unlicense), generated 39 short sounds: 21 character/weapon-family effects and 18 three-note instrument chords.
 
 ## Korean lettering
 

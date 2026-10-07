@@ -4,63 +4,63 @@
   "themes": {
     "menu": {
       "audio": "assets/music/menu.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "overworld-day": {
       "audio": "assets/music/overworld-day.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "night": {
       "audio": "assets/music/night.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "underground": {
       "audio": "assets/music/underground.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "jungle-mushroom": {
       "audio": "assets/music/jungle-mushroom.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "snow": {
       "audio": "assets/music/snow.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "desert": {
       "audio": "assets/music/desert.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "ocean": {
       "audio": "assets/music/ocean.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "danger": {
       "audio": "assets/music/danger.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "events": {
       "audio": "assets/music/events.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "bosses": {
       "audio": "assets/music/bosses.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     },
     "final-boss": {
       "audio": "assets/music/final-boss.ogg",
-      "status": "draft",
-      "loopReviewed": false
+      "status": "approved",
+      "loopReviewed": true
     }
   },
   "tracks": [

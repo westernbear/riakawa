@@ -1,0 +1,105 @@
+{
+  "apiVisibility": "public",
+  "anonymousPageVerified": false,
+  "items": [
+    {
+      "id": 3815015616,
+      "title": "Riakawa | Chiikawa, Hachiware & Usagi · 치이카와",
+      "result": "k_EResultOK",
+      "app": 1281930,
+      "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+      "banned": false,
+      "tags": "Visual Tweaks,Audio Tweaks,English,korean,Both,1.4.4",
+      "keyValues": {
+        "Author": "Riakawa contributors",
+        "name": "Riakawa",
+        "version": "0.0.0",
+        "modside": "Both",
+        "homepage": "https://github.com/westernbear/riakawa",
+        "modloaderversion": "2026.8.3.0",
+        "app_workshop_eula_version": "9",
+        "modreferences": "",
+        "versionsummary": "2026.8.3.0:0.1.0"
+      },
+      "metadata": "{\"modVersionHashes\":[\"ceO8RawO+NxiKbwqXSw1PRWcm04=\"]}",
+      "previews": 6,
+      "anonymousPageVerified": false
+    },
+    {
+      "id": 3815008011,
+      "title": "Riakawa Music | Chiikawa 치이카와 음악",
+      "result": "k_EResultOK",
+      "app": 105600,
+      "visibility": "k_ERemoteStoragePublishedFileVisibilityPublic",
+      "banned": false,
+      "tags": "Resource Packs,Music,Chiikawa,Noncommercial",
+      "keyValues": {},
+      "metadata": "",
+      "previews": 3,
+      "anonymousPageVerified": true
+    }
+  ],
+  "finalSubscribedModSha256": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd",
+  "finalMusicMappedFiles": 89,
+  "musicHashesMatchApprovedSources": true,
+  "nativeManifestsPublic": true,
+  "gameInstallation": {
+    "modItem": 3815015616,
+    "musicItem": 3815008011,
+    "modSha256": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd",
+    "profileHasNoLocalModPackages": true,
+    "profileHasNoLocalMusicPacks": true,
+    "enabledMods": [
+      "Riakawa"
+    ],
+    "gameWorldLoaded": true,
+    "defaultChiikawaAndVObserved": true,
+    "koreanConfigSavedAndReopened": true,
+    "musicLoadedInLog": true,
+    "musicCaptureCheck": "artifacts/workshop/music-playback-checks.json",
+    "screenshots": [
+      "artifacts/workshop/clean-world.png",
+      "artifacts/workshop/clean-emote.png",
+      "artifacts/workshop/clean-korean-config.png"
+    ],
+    "limits": "Copied local QA player/world; existing unrelated Steam subscriptions were disabled. No QA helper mod loaded. Public listing verification remains separate."
+  },
+  "musicPlayback": {
+    "theme": "overworld-day",
+    "windows": [
+      {
+        "start": 1,
+        "correlation": 0.9970942754708774,
+        "offsetSeconds": 28.591473922902495
+      },
+      {
+        "start": 2,
+        "correlation": 0.5359879311092851,
+        "offsetSeconds": 9.272925170068028
+      },
+      {
+        "start": 3,
+        "correlation": 0.9997890036708047,
+        "offsetSeconds": 30.572335600907028
+      },
+      {
+        "start": 4,
+        "correlation": 0.9999394091366024,
+        "offsetSeconds": 31.572335600907028
+      },
+      {
+        "start": 5,
+        "correlation": 0.7085327889307612,
+        "offsetSeconds": 32.57233560090703
+      },
+      {
+        "start": 6,
+        "correlation": 0.8181043536576496,
+        "offsetSeconds": 33.564308390022674
+      }
+    ],
+    "matchingWindows": 3
+  },
+  "anonymousCheckDate": "2026-10-07",
+  "anonymousPageNote": "Music pack page displays its title, description and subscription section while signed out. Mod page still returns the Steam item access error."
+}

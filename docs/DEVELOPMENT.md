@@ -13,7 +13,7 @@ bash scripts/build.sh
 ```
 
 `TML_PATH` and `ASSET_PYTHON` can point the build script to other local paths.
-The resulting mod is `dist/Riakawa.tmod`. Rebuild the companion music pack without
+The Release build is written to `dist/Riakawa.tmod`. Steam Workshop rejects Debug builds. Rebuild the companion music pack without
 regenerating music with:
 
 ```sh
@@ -23,7 +23,7 @@ python3 scripts/prepare-music.py --pack-only
 For ordinary C# iteration, pass the installed tModLoader directory directly:
 
 ```sh
-dotnet build Riakawa/Riakawa.csproj -p:TModLoaderDirectory=/path/to/tModLoader
+dotnet build Riakawa/Riakawa.csproj -c Release -p:TModLoaderDirectory=/path/to/tModLoader
 ```
 
 `checks/GameChecks` and `checks/CombatProbe` are optional development mods, excluded
@@ -31,3 +31,40 @@ from Riakawa's package. They create isolated test observations; never enable the
 world-editing commands in a real save. Recorded QA checks read local `artifacts/qa`
 outputs. The published summaries describe the tested versions and limits in
 [APPEARANCE-REVIEW.md](APPEARANCE-REVIEW.md).
+
+
+## Combat replay
+
+`CombatProbe` supports an opt-in single-player replay. Use copied player/world files
+in separate profiles. Set these environment variables before launching each client:
+
+```sh
+RIAKAWA_LIVE_COMBAT=/absolute/path/to/output
+RIAKAWA_LIVE_PLAYER=/absolute/path/to/copied-player.plr
+RIAKAWA_LIVE_WORLD=/absolute/path/to/copied-world.wld
+RIAKAWA_QA_CATALOG=/absolute/path/to/assets/vanilla-catalog.json
+RIAKAWA_LIVE_CHARACTER=Chiikawa
+```
+
+The baseline profile enables only CombatProbe; the comparison profile also enables
+Riakawa. Use `Native` for the baseline character. Each weapon runs for 360 native
+simulation ticks against active slimes, zombies and cave bats at clear noon. Ticks 1 through 180 receive attack input.
+Item checks, projectile updates and native damage rolls receive matching seeds to
+remove differences caused by frame timing. Native biome updates also run each tick
+so nearby tile buffs do not depend on lighting updates. The client renders between
+batches of 256 simulation ticks; every tick is still recorded. Life, mana and ammunition
+are not refilled.
+The client exits without saving after the last case. Compare the complete outputs:
+
+```sh
+python3 checks/LiveCombatChecks.py artifacts/qa/live-day-native \
+  artifacts/qa/live-day-chiikawa --full \
+  --output artifacts/qa/live-combat-checks.json
+```
+
+These replays cover the recorded arena and input sequence. They do not cover every
+terrain, accessory, alternate attack or multiplayer timing combination.
+
+The comparison omits four native display/audio slots: one rainbow hue and three
+tracked sound handles. [The source review](qa/combat-cosmetic-fields.json) names each
+field. Their raw values remain in the traces; all other AI fields are compared.

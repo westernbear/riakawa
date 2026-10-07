@@ -7,9 +7,9 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 python3 "$root/checks/CatalogChecks.py"
 tml="${TML_PATH:-$root/.tools/tModLoader}"
 dotnet run --project "$root/checks/CoreChecks.csproj"
-dotnet build "$root/Riakawa/Riakawa.csproj" -p:TModLoaderDirectory="$tml" --nologo
+dotnet build "$root/Riakawa/Riakawa.csproj" -c Release -p:TModLoaderDirectory="$tml" --nologo
 cd "$tml"
 dotnet tModLoader.dll -server -nosteam -build "$root/Riakawa" \
-  -eac "$root/Riakawa/bin/Debug/net8.0/Riakawa.dll" -tmlsavedirectory "$root/.tools/tml-save"
+  -eac "$root/Riakawa/bin/Release/net8.0/Riakawa.dll" -tmlsavedirectory "$root/.tools/tml-save"
 mkdir -p "$root/dist"
 cp "$root/.tools/tml-save/Mods/Riakawa.tmod" "$root/dist/Riakawa.tmod"

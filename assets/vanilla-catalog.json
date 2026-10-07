@@ -1,8 +1,8 @@
 {
   "tModLoader": "2026.08.3.0",
   "terraria": "1.4.4.9",
-  "scopeReviewed": false,
-  "scopeRule": "damage \u003E 0; directly usable (including throwable ammunition); not mining tools, placeable traps or accessories",
+  "scopeReviewed": true,
+  "scopeRule": "damage > 0; directly usable (including throwable ammunition); not mining tools, placeable traps or accessories",
   "weapons": [
     {
       "id": 4,

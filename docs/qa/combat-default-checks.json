@@ -7,10 +7,10 @@
   "excludedFields": [],
   "scope": "All public primitive/enum instance defaults, damage classes and projectile frames/whip flags; not live AI, range or collision parity.",
   "artifacts": {
-    "artifacts/qa/native-defaults.json": "89f0fdaf57564597bdee2c6e9ded714e0e32265c225bddd4557bbca2bc19d1c5",
-    "artifacts/qa/riakawa-defaults.json": "6d15527c86fdcca1efd5d4ee174116adda96e122fae5b3ec5ca345eaf296d9ea",
-    "dist/Riakawa.tmod": "d4c439a72dc688938e8486d9666f925c26074f537758b13d3baa199a849429a0",
-    ".tools/probe-native/Mods/CombatProbe.tmod": "c4333c480ca4d4c83e28ae005d91bb16ddff769c2cc9ad687e61be99b09acb33",
-    ".tools/probe-riakawa/Mods/CombatProbe.tmod": "c4333c480ca4d4c83e28ae005d91bb16ddff769c2cc9ad687e61be99b09acb33"
+    "artifacts/qa/native-defaults.json": "78cabfe682d8a5c9c4dab49bb08ff3550b2a69888cf57a9e48bd08e6079a70d3",
+    "artifacts/qa/riakawa-defaults.json": "858295551455c656c11ee97dce6e3905d2862a64089407b60080eecc8d922316",
+    "dist/Riakawa.tmod": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd",
+    ".tools/probe-native/Mods/CombatProbe.tmod": "f0d3ccde1c43db2184ff88af3843e9e010fb1e0deb6eb4f1f125dda78402f12b",
+    ".tools/probe-riakawa/Mods/CombatProbe.tmod": "f0d3ccde1c43db2184ff88af3843e9e010fb1e0deb6eb4f1f125dda78402f12b"
   }
 }

@@ -103,15 +103,17 @@ def main():
     (pack/'pack.json').write_text(json.dumps({'Name':'Riakawa Music',
         'Author':'Riakawa contributors','Description':'12 original AI-assisted themes for Riakawa. '
         'Noncommercial fan project. Includes Otherworld; preserves rain/wind ambience. '
-        'Draft audio: gameplay and musical loop review pending.', 'Version':{'major':0,'minor':1}},indent=2)+'\n')
+        'Companion pack: https://github.com/westernbear/riakawa', 'Version':{'major':0,'minor':1}},indent=2)+'\n')
     shutil.copy2(ROOT/'docs/CREDITS.md',pack/'CREDITS.md')
     shutil.copy2(ROOT/'Riakawa/icon.png',pack/'icon.png')
     expected = {f"Music_{track['id']}.ogg" for track in mapping['tracks']}
     actual = {path.name for path in content.iterdir()}
     if actual != expected:
         raise ValueError('Unexpected/missing files in music pack')
-    shutil.make_archive(str(ROOT/'dist/RiakawaMusic-preview'), 'zip', pack)
-    print('PACK_READY',pack,len(expected),'tracks; draft, not published')
+    approved = all(t['status'] == 'approved' and t['loopReviewed'] for t in mapping['themes'].values())
+    name = 'RiakawaMusic' if approved else 'RiakawaMusic-preview'
+    shutil.make_archive(str(ROOT/'dist'/name), 'zip', pack)
+    print('PACK_READY',pack,len(expected),'tracks;', 'reviewed' if approved else 'draft')
 
 
 if __name__ == '__main__':
