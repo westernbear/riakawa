@@ -1,51 +1,17 @@
 Mods: {
 	Riakawa: {
-		Keybinds.Emote.DisplayName: Emote
-
-		Emotes: {
-			Chiikawa: Waa!
-			Hachiware: It will work out!
-			Usagi: Yaha!
-			Momonga: Praise me!
-		}
-
 		Configs: {
 			RiakawaConfig: {
-				DisplayName: Riakawa appearance
+				DisplayName: Riakawa
 
 				InterfaceLanguage: {
 					Label: Language / 한국어
-					Tooltip: Choose the language for Riakawa settings and emotes. Save and reopen settings to apply.
+					Tooltip: Select the language for this mod's settings. Reopen settings after changing it.
 				}
 
 				Character: {
 					Label: Character
-					Tooltip: Change appearance without changing combat stats.
-				}
-
-				ReplaceWeapons: {
-					Label: Weapon appearances
-					Tooltip: Show character designs for weapons and their attacks.
-				}
-
-				Voices: {
-					Label: Character voices
-					Tooltip: Use character voices for hurt, death and emotes.
-				}
-
-				SoundEffects: {
-					Label: Attack sounds
-					Tooltip: Replace sounds from player weapons and their projectiles.
-				}
-
-				Decorations: {
-					Label: Decorative effects
-					Tooltip: Show emote text and character-themed attack particles.
-				}
-
-				ReducedEffects: {
-					Label: Reduce effects
-					Tooltip: Pause idle and emote animations and show fewer attack particles.
+					Tooltip: Change the player's appearance without changing gameplay.
 				}
 			}
 
@@ -86,6 +52,11 @@ Mods: {
 
 				Momonga: {
 					Label: Momonga
+					Tooltip: ""
+				}
+
+				Doro: {
+					Label: Doro
 					Tooltip: ""
 				}
 

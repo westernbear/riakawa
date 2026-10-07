@@ -1,9 +1,0 @@
-{
-  "combatTestAssemblySha256": "4b6da5adb89cd2f43156692b2ddc168aa60f81e7a537ac10d9119463ec87be5c",
-  "publishedAssemblySha256": "4b6da5adb89cd2f43156692b2ddc168aa60f81e7a537ac10d9119463ec87be5c",
-  "sameGameplayCode": true,
-  "packageSha256": "d9067b5b21886e7ce1569d04d6c8f62143f581b02c94bec7644dc549cbedccbd",
-  "changesSinceCombatBuild": [],
-  "musicZipSha256": "5d9a42cfcf2837e1916da57fe62774a0313c01643b076dc37123bc38b81c89f2",
-  "verification": "All three final combat replays and the Workshop subscription check used this exact Release package."
-}

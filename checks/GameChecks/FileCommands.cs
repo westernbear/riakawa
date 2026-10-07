@@ -30,7 +30,6 @@ internal sealed class FileCommands : CommandCaller
         var caller=new FileCommands();
         caller.Reply("QA command: "+text);
         if (args[0]=="/rq") ModContent.GetInstance<CheckCommand>().Action(caller,text,args[1..]);
-        else if (args[0]=="/rqsweep") ModContent.GetInstance<SweepCommand>().Action(caller,text,args[1..]);
         else ChatHelper.SendChatMessageFromClient(ChatManager.Commands.CreateOutgoingMessage(text));
     }
 }

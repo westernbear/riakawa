@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using Riakawa.Core;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
@@ -20,15 +21,18 @@ public sealed class CharacterLayer : PlayerDrawLayer
         var player = drawInfo.drawPlayer;
         var state = player.GetModPlayer<RiakawaPlayer>();
         if (!CosmeticAssets.TryPlayer(state.Character, out var art, out var texture)) return;
+        string groundMotion = state.Character == Character.Doro &&
+            SkinMotion.FastRun(player.velocity.X, player.maxRunSpeed, player.accRunSpeed,
+                player.velocity.X < 0 ? player.controlLeft : player.controlRight,
+                player.velocity.Y == 0, player.mount.Active) ? "run" : "walk";
         string animation = player.dead ? "death" : state.HurtTicks > 0 ? "hurt" :
             player.itemAnimation > 0 ? "attack" : player.mount.Active ? "mount" :
             player.wet ? "swim" : player.velocity.Y != 0 ? "jump" :
-            System.Math.Abs(player.velocity.X) > 0.1f ? "walk" :
-            state.Emote.Remaining > 0 && RiakawaConfig.Current.Decorations ? "emote" : "idle";
+            System.Math.Abs(player.velocity.X) > 0.1f ? groundMotion : "idle";
         // The native grip supplies the attacking arm; keep the body's movement.
-        if (CharacterHands.Active(drawInfo) && animation == "attack")
+        if (animation == "attack" && (CharacterHands.Active(drawInfo) || groundMotion == "run"))
             animation = player.mount.Active ? "mount" : player.wet ? "swim" :
-                player.velocity.Y != 0 ? "jump" : System.Math.Abs(player.velocity.X) > 0.1f ? "walk" : "idle";
+                player.velocity.Y != 0 ? "jump" : System.Math.Abs(player.velocity.X) > 0.1f ? groundMotion : "idle";
         if (!art.Animations.TryGetValue(animation, out var sequence) &&
             !art.Animations.TryGetValue("idle", out sequence)) return;
         int frame = (int)(Main.GameUpdateCount / (uint)System.Math.Max(1, sequence.Ticks)
@@ -38,7 +42,6 @@ public sealed class CharacterLayer : PlayerDrawLayer
                 player.itemAnimationMax, 0, sequence.Frames - 1);
         if (animation == "death") frame = System.Math.Min(state.DeathTicks / sequence.Ticks, sequence.Frames - 1);
         if (animation == "jump") frame = player.velocity.Y * player.gravDir < 0 ? 0 : 1;
-        if (RiakawaConfig.Current.ReducedEffects && animation is "idle" or "emote") frame = 0;
         CharacterHands.Arm(ref drawInfo);
         var source = new Rectangle(frame * art.FrameWidth, sequence.Row * art.FrameHeight, art.FrameWidth, art.FrameHeight);
         var position = drawInfo.Position + new Vector2(player.width / 2f,
@@ -54,6 +57,6 @@ public sealed class CharacterLayer : PlayerDrawLayer
         }
         drawInfo.DrawDataCache.Add(new DrawData(texture.Value, position, source,
             drawInfo.headOnlyRender ? drawInfo.colorArmorHead : drawInfo.colorArmorBody,
-            0f, origin, 1f, effects, 0));
+            0f, origin, 40f / art.FrameWidth, effects, 0));
     }
 }

@@ -1,73 +1,29 @@
 {
   "Mods": {
     "Riakawa": {
-      "Keybinds": {
-        "Emote": {
-          "DisplayName": "감정표현"
-        }
-      },
-      "Emotes": {
-        "Chiikawa": "와아!",
-        "Hachiware": "어떻게든 돼라!",
-        "Usagi": "야하!",
-        "Momonga": "칭찬해라!"
-      },
       "Configs": {
         "RiakawaConfig": {
-          "DisplayName": "리아카와 외형 설정",
-          "Character": {
-            "Label": "캐릭터",
-            "Tooltip": "전투 능력치는 유지하고 외형을 바꿉니다."
-          },
-          "ReplaceWeapons": {
-            "Label": "무기 외형 교체",
-            "Tooltip": "무기와 공격 외형을 선택한 캐릭터에 맞춰 바꿉니다."
-          },
-          "Voices": {
-            "Label": "캐릭터 음성",
-            "Tooltip": "피격·사망·감정표현 소리를 캐릭터 음성으로 바꿉니다."
-          },
-          "SoundEffects": {
-            "Label": "공격 효과음",
-            "Tooltip": "플레이어 무기와 투사체의 효과음을 교체합니다."
-          },
-          "Decorations": {
-            "Label": "장식 효과",
-            "Tooltip": "감정표현 문구와 캐릭터 모양의 공격 입자를 표시합니다."
-          },
-          "ReducedEffects": {
-            "Label": "효과 줄이기",
-            "Tooltip": "대기·감정표현 애니메이션을 멈추고 공격 입자를 줄입니다."
-          },
+          "DisplayName": "리아카와",
           "InterfaceLanguage": {
             "Label": "언어 / Language",
-            "Tooltip": "리아카와의 설정과 감정표현 언어를 바꿉니다. 저장 후 설정을 다시 열면 적용됩니다."
-          }
-        },
-        "Character": {
-          "Original": {
-            "Label": "원래 모습"
+            "Tooltip": "설정에 사용할 언어를 고릅니다. 변경 후 설정을 다시 여세요."
           },
-          "Chiikawa": {
-            "Label": "치이카와"
-          },
-          "Hachiware": {
-            "Label": "하치와레"
-          },
-          "Usagi": {
-            "Label": "우사기"
-          },
-          "Momonga": {
-            "Label": "모몽가"
+          "Character": {
+            "Label": "캐릭터",
+            "Tooltip": "게임 진행은 그대로 두고 플레이어 모습만 바꿉니다."
           }
         },
         "InterfaceLanguage": {
-          "English": {
-            "Label": "English"
-          },
-          "Korean": {
-            "Label": "한국어"
-          }
+          "English": { "Label": "English" },
+          "Korean": { "Label": "한국어" }
+        },
+        "Character": {
+          "Original": { "Label": "원래 모습" },
+          "Chiikawa": { "Label": "치이카와" },
+          "Hachiware": { "Label": "하치와레" },
+          "Usagi": { "Label": "우사기" },
+          "Momonga": { "Label": "모몽가" },
+          "Doro": { "Label": "도로롱" }
         }
       }
     }
