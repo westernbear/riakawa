@@ -46,7 +46,7 @@ def validate(release=False):
             assert len(rows) == len(art['animations']), name
             if name != 'Doro':
                 heads = {image.crop((frame*width, row*height,
-                                    (frame+1)*width, row*height+66)).tobytes()
+                                    (frame+1)*width, row*height+60)).tobytes()  # face only; paws swing below
                          for pose in ('idle', 'walk')
                          for row in [art['animations'][pose]['row']]
                          for frame in range(art['animations'][pose]['frames'])}
