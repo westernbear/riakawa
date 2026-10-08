@@ -25,6 +25,15 @@
           "Momonga": { "Label": "모몽가" },
           "Doro": { "Label": "도로롱" }
         }
+      },
+      "Items": {
+        "Jukebox": {
+          "DisplayName": "세이렌의 섬 주크박스",
+          "Tooltip": "근처에 놓거나 장신구로 착용하면 \"세이렌의 섬\"이 흘러나옵니다\n오른쪽 클릭으로 켜고 끕니다"
+        }
+      },
+      "Tiles": {
+        "JukeboxTile": { "MapEntry": "세이렌의 섬 주크박스" }
       }
     }
   }

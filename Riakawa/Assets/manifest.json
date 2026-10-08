@@ -299,6 +299,11 @@
           "row": 8,
           "frames": 4,
           "ticks": 6
+        },
+        "attackwalk": {
+          "row": 9,
+          "frames": 4,
+          "ticks": 7
         }
       }
     }

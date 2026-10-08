@@ -63,5 +63,18 @@ Mods: {
 				Tooltip: ""
 			}
 		}
+
+		Items: {
+			Jukebox: {
+				DisplayName: Siren Island Jukebox
+				Tooltip:
+					'''
+					Plays "Siren Island" while placed nearby or equipped
+					Right-click to turn it on or off
+					'''
+			}
+		}
+
+		Tiles.JukeboxTile.MapEntry: Siren Island Jukebox
 	}
 }

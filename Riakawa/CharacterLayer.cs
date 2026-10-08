@@ -21,7 +21,8 @@ public sealed class CharacterLayer : PlayerDrawLayer
         var player = drawInfo.drawPlayer;
         var state = player.GetModPlayer<RiakawaPlayer>();
         if (!CosmeticAssets.TryPlayer(state.Character, out var art, out var texture)) return;
-        string groundMotion = state.Character == Character.Doro &&
+        // Doro swings items upright: the native arm needs the two-legged body.
+        string groundMotion = state.Character == Character.Doro && player.itemAnimation == 0 &&
             SkinMotion.FastRun(player.velocity.X, player.maxRunSpeed, player.accRunSpeed,
                 player.velocity.X < 0 ? player.controlLeft : player.controlRight,
                 player.velocity.Y == 0, player.mount.Active) ? "run" : "walk";
@@ -30,14 +31,17 @@ public sealed class CharacterLayer : PlayerDrawLayer
             player.wet ? "swim" : player.velocity.Y != 0 ? "jump" :
             System.Math.Abs(player.velocity.X) > 0.1f ? groundMotion : "idle";
         // The native grip supplies the attacking arm; keep the body's movement.
-        if (animation == "attack" && (CharacterHands.Active(drawInfo) || groundMotion == "run"))
+        if (animation == "attack" && CharacterHands.Active(drawInfo))
             animation = player.mount.Active ? "mount" : player.wet ? "swim" :
                 player.velocity.Y != 0 ? "jump" : System.Math.Abs(player.velocity.X) > 0.1f ? groundMotion : "idle";
+        // Doro's near paw leaves the body and swings to the grip (CharacterHands.Arm).
+        if (state.Character == Character.Doro && CharacterHands.Active(drawInfo) && animation is not ("mount" or "swim"))
+            animation = animation == "walk" ? "attackwalk" : "attack";
         if (!art.Animations.TryGetValue(animation, out var sequence) &&
             !art.Animations.TryGetValue("idle", out sequence)) return;
         int frame = (int)(Main.GameUpdateCount / (uint)System.Math.Max(1, sequence.Ticks)
             % (uint)System.Math.Max(1, sequence.Frames));
-        if (state.Character == Character.Doro && animation == "walk" && sequence.Frames == 4)
+        if (state.Character == Character.Doro && animation is "walk" or "attackwalk" && sequence.Frames == 4)
             frame = SkinMotion.DoroWalkFrame(Main.GameUpdateCount, sequence.Ticks);
         if (state.Character != Character.Doro && animation == "hurt")
             frame = System.Math.Clamp((18 - state.HurtTicks) / sequence.Ticks, 0, sequence.Frames - 1);

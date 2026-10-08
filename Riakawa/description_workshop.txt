@@ -4,9 +4,10 @@ Play Terraria as Chiikawa, Hachiware, Usagi, Momonga or Doro.
 
 [list]
 [*]Animated player skins for movement, combat, swimming, mounts and damage.
-[*]Doro runs on four legs when reaching Hermes Boots sprint speed.
+[*]Doro runs on four legs at Hermes Boots sprint speed, swings swords with its own paw and aims guns at the cursor.
 [*]Character choice syncs in multiplayer. Original appearance is always available.
 [*]Weapons, attacks, music, sounds and game balance stay unchanged.
+[*]Siren Island Jukebox: craft it from 4 Wood at a Work Bench and place it to play an original song. 나무 4개로 만드는 주크박스를 설치하면 새로 만든 곡이 흘러나옵니다.
 [/list]
 
 Requires PC Steam Terraria 1.4.4.9 and tModLoader v2026.08.3.0. Enable the mod and choose a character in Mod Configuration.

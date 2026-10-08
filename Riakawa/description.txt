@@ -1,4 +1,5 @@
 Play as Chiikawa, Hachiware, Usagi, Momonga or Doro in Terraria 1.4.4.9.
-Riakawa changes the player appearance only. Weapons, attacks, music, sounds and gameplay remain vanilla.
+Riakawa changes the player appearance. Weapons, attacks, music, sounds and gameplay remain vanilla.
+It also adds the Siren Island Jukebox (4 Wood at a Work Bench), which plays an original song when placed.
 Choose a character or restore the original player in Mod Configuration. Korean and English supported.
 Unofficial, noncommercial fan mod.

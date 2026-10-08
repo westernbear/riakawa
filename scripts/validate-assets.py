@@ -13,6 +13,7 @@ POSES = {'idle', 'walk', 'jump', 'swim', 'attack', 'mount', 'hurt', 'death'}
 
 def validate(release=False):
     manifest = json.loads((ROOT/'Riakawa/Assets/manifest.json').read_text())
+    json.loads((ROOT/'Riakawa/Localization/ko-KR.hjson').read_text())  # RiakawaLocalization parses it as strict JSON
     assert manifest['schemaVersion'] == 1 and set(manifest) == {'schemaVersion', 'tModLoader', 'players'}
     assert manifest['tModLoader'] == '2026.08.3.0'
     assert len(manifest['players']) == 5
@@ -56,12 +57,16 @@ def validate(release=False):
                 assert len(distinct) == len(art['animations']), f'{name} poses must not reuse walking frames'
             if name == 'Doro':
                 run_y = art['animations']['run']['row']*height
-                faces = {image.crop((frame*width+7, run_y+37, frame*width+55, run_y+81)).tobytes()
+                faces = {image.crop((frame*width+25, run_y+37, frame*width+73, run_y+81)).tobytes()
                          for frame in range(4)}
                 assert len(faces) == 1, 'Doro run face must stay still'
-                ribbons = {image.crop((frame*width+64, run_y+52, frame*width+72, run_y+62)).tobytes()
+                ribbons = {image.crop((frame*width+8, run_y+52, frame*width+16, run_y+62)).tobytes()
                            for frame in range(4)}
                 assert len(ribbons) == 1, 'Doro run ribbon must stay still'
+                mount_y = art['animations']['mount']['row']*height
+                stand = image.crop((0, run_y, width, run_y+height)).tobytes()
+                assert all(image.crop((frame*width, mount_y, (frame+1)*width, mount_y+height)).tobytes() == stand
+                           for frame in range(4)), 'Doro rides on all fours, standing still'
         head = art['head']
         assert len(head) == 4 and 0 <= head[0] < width and 0 <= head[1] < height and head[2] > 0 and head[3] > 0
         assert head[0]+head[2] <= width and head[1]+head[3] <= height, name
