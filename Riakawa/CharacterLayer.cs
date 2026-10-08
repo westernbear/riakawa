@@ -39,7 +39,7 @@ public sealed class CharacterLayer : PlayerDrawLayer
             % (uint)System.Math.Max(1, sequence.Frames));
         if (state.Character == Character.Doro && animation == "walk" && sequence.Frames == 4)
             frame = SkinMotion.DoroWalkFrame(Main.GameUpdateCount, sequence.Ticks);
-        if (state.Character == Character.Hachiware && animation == "hurt")
+        if (state.Character != Character.Doro && animation == "hurt")
             frame = System.Math.Clamp((18 - state.HurtTicks) / sequence.Ticks, 0, sequence.Frames - 1);
         if (animation == "attack" && player.itemAnimationMax > 0)
             frame = System.Math.Clamp((player.itemAnimationMax - player.itemAnimation) * sequence.Frames /

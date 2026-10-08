@@ -6,17 +6,17 @@
       "character": "Chiikawa",
       "status": "approved",
       "texture": "Assets/Players/chiikawa",
-      "frameWidth": 40,
-      "frameHeight": 56,
+      "frameWidth": 80,
+      "frameHeight": 112,
       "feet": [
-        20,
-        50
+        40,
+        100
       ],
       "head": [
-        5,
-        12,
-        31,
-        25
+        2,
+        2,
+        76,
+        76
       ],
       "animations": {
         "idle": {
@@ -26,8 +26,8 @@
         },
         "walk": {
           "row": 1,
-          "frames": 4,
-          "ticks": 7
+          "frames": 8,
+          "ticks": 4
         },
         "jump": {
           "row": 2,
@@ -37,27 +37,27 @@
         "swim": {
           "row": 3,
           "frames": 4,
-          "ticks": 7
+          "ticks": 8
         },
         "attack": {
           "row": 4,
           "frames": 4,
-          "ticks": 7
+          "ticks": 6
         },
         "mount": {
           "row": 5,
           "frames": 4,
-          "ticks": 7
+          "ticks": 16
         },
         "hurt": {
           "row": 6,
           "frames": 4,
-          "ticks": 7
+          "ticks": 4
         },
         "death": {
           "row": 7,
           "frames": 4,
-          "ticks": 7
+          "ticks": 12
         }
       }
     },
@@ -124,17 +124,17 @@
       "character": "Usagi",
       "status": "approved",
       "texture": "Assets/Players/usagi",
-      "frameWidth": 40,
-      "frameHeight": 56,
+      "frameWidth": 80,
+      "frameHeight": 112,
       "feet": [
-        20,
-        50
+        40,
+        100
       ],
       "head": [
-        5,
-        3,
-        31,
-        37
+        2,
+        2,
+        76,
+        76
       ],
       "animations": {
         "idle": {
@@ -144,8 +144,8 @@
         },
         "walk": {
           "row": 1,
-          "frames": 4,
-          "ticks": 7
+          "frames": 8,
+          "ticks": 4
         },
         "jump": {
           "row": 2,
@@ -155,27 +155,27 @@
         "swim": {
           "row": 3,
           "frames": 4,
-          "ticks": 7
+          "ticks": 8
         },
         "attack": {
           "row": 4,
           "frames": 4,
-          "ticks": 7
+          "ticks": 6
         },
         "mount": {
           "row": 5,
           "frames": 4,
-          "ticks": 7
+          "ticks": 16
         },
         "hurt": {
           "row": 6,
           "frames": 4,
-          "ticks": 7
+          "ticks": 4
         },
         "death": {
           "row": 7,
           "frames": 4,
-          "ticks": 7
+          "ticks": 12
         }
       }
     },
@@ -183,17 +183,17 @@
       "character": "Momonga",
       "status": "approved",
       "texture": "Assets/Players/momonga",
-      "frameWidth": 40,
-      "frameHeight": 56,
+      "frameWidth": 80,
+      "frameHeight": 112,
       "feet": [
-        20,
-        50
+        40,
+        100
       ],
       "head": [
-        1,
-        9,
-        35,
-        29
+        2,
+        2,
+        76,
+        76
       ],
       "animations": {
         "idle": {
@@ -203,8 +203,8 @@
         },
         "walk": {
           "row": 1,
-          "frames": 4,
-          "ticks": 7
+          "frames": 8,
+          "ticks": 4
         },
         "jump": {
           "row": 2,
@@ -214,27 +214,27 @@
         "swim": {
           "row": 3,
           "frames": 4,
-          "ticks": 7
+          "ticks": 8
         },
         "attack": {
           "row": 4,
           "frames": 4,
-          "ticks": 7
+          "ticks": 6
         },
         "mount": {
           "row": 5,
           "frames": 4,
-          "ticks": 7
+          "ticks": 16
         },
         "hurt": {
           "row": 6,
           "frames": 4,
-          "ticks": 7
+          "ticks": 4
         },
         "death": {
           "row": 7,
           "frames": 4,
-          "ticks": 7
+          "ticks": 12
         }
       }
     },

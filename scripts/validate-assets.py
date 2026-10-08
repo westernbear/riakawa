@@ -21,7 +21,7 @@ def validate(release=False):
         name = art['character']
         assert art['status'] in {'draft', 'approved'}, name
         assert not release or art['status'] == 'approved', name
-        width, height = (80, 112) if name in {'Hachiware', 'Doro'} else (40, 56)
+        width, height = 80, 112
         assert art['frameWidth'] == width and art['frameHeight'] == height, name
         assert art['feet'] == ([40, 100] if width == 80 else [20, 50]), name
         assert set(art['animations']) >= POSES, name
@@ -29,11 +29,11 @@ def validate(release=False):
         path = ROOT/'Riakawa'/f"{art['texture']}.png"
         assert path.resolve().is_relative_to((ROOT/'Riakawa').resolve()), name
         with Image.open(path) as image:
-            columns = 8 if name == 'Hachiware' else 4
+            columns = 4 if name == 'Doro' else 8
             assert image.mode == 'RGBA' and image.size == (width*columns, height*len(art['animations'])), name
             rows = set()
             for pose, spec in art['animations'].items():
-                frames = 8 if name == 'Hachiware' and pose == 'walk' else 4
+                frames = 8 if name != 'Doro' and pose == 'walk' else 4
                 assert spec['frames'] == frames and spec['ticks'] > 0, (name, pose)
                 assert 0 <= spec['row'] < len(art['animations']), (name, pose)
                 rows.add(spec['row'])
@@ -43,17 +43,17 @@ def validate(release=False):
                     assert tile.getbbox() is not None, (name, pose, frame)
                     assert tile.getpixel((0, 0))[3] == 0 and tile.getpixel((width-1, height-1))[3] == 0, (name, pose, frame)
             assert len(rows) == len(art['animations']), name
-            if name == 'Hachiware':
+            if name != 'Doro':
                 heads = {image.crop((frame*width, row*height,
                                     (frame+1)*width, row*height+66)).tobytes()
                          for pose in ('idle', 'walk')
                          for row in [art['animations'][pose]['row']]
                          for frame in range(art['animations'][pose]['frames'])}
-                assert len(heads) == 1, 'Hachiware idle/walk face must stay stable'
+                assert len(heads) == 1, f'{name} idle/walk face must stay stable'
                 distinct = {image.crop((0, spec['row']*height, width*4,
                                         (spec['row']+1)*height)).tobytes()
                             for spec in art['animations'].values()}
-                assert len(distinct) == len(art['animations']), 'Hachiware poses must not reuse walking frames'
+                assert len(distinct) == len(art['animations']), f'{name} poses must not reuse walking frames'
             if name == 'Doro':
                 run_y = art['animations']['run']['row']*height
                 faces = {image.crop((frame*width+7, run_y+37, frame*width+55, run_y+81)).tobytes()
