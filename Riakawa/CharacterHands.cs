@@ -62,12 +62,22 @@ public sealed class CharacterHands : PlayerDrawLayer
             player.direction*player.gravDir*(angle-ArmRest), origin, .5f, effects, 0));
     }
 
+    // Vanilla draws swung items from their bottom corner (DrawPlayer_27_HeldItem); the hand closes a few pixels up the handle.
+    private const float GripInset = 4f; // ponytail: calibration knob, tune from swing captures
+    internal static Vector2 Grip(in PlayerDrawSet draw)
+    {
+        var player = draw.drawPlayer;
+        if (player.HeldItem.useStyle != ItemUseStyleID.Swing) return draw.ItemLocation;
+        return draw.ItemLocation + new Vector2(player.direction, -player.gravDir).RotatedBy(player.itemRotation)
+            * GripInset * player.GetAdjustedItemScale(player.HeldItem);
+    }
+
     internal static void Arm(ref PlayerDrawSet draw)
     {
         if (!Active(draw) || DoroArmActive(draw)) return;
         var player=draw.drawPlayer;
         bool doro=player.GetModPlayer<RiakawaPlayer>().Character==Character.Doro;
-        var hand=draw.ItemLocation-Main.screenPosition;
+        var hand=Grip(draw)-Main.screenPosition;
         // Doro's near paw is cut from the body sprite while it swings, so it starts at that paw's shoulder.
         int side=doro?8:10,height=doro?17:13;
         var shoulder=draw.Position+player.legPosition-Main.screenPosition+new Vector2(player.width/2f+player.direction*side,
@@ -87,13 +97,15 @@ public sealed class CharacterHands : PlayerDrawLayer
     {
         if (DoroArmActive(drawInfo)) { DoroArm(ref drawInfo); return; }
         Colors(drawInfo,out var outline,out var fill);
-        var hand=drawInfo.ItemLocation-Main.screenPosition;
         var relative=drawInfo.ItemLocation-drawInfo.Position;
         if (relative.LengthSquared()>100*100) return;
-        PixelBox(ref drawInfo,hand,new Vector2(5,3),outline);
-        PixelBox(ref drawInfo,hand,new Vector2(3,5),outline);
-        PixelBox(ref drawInfo,hand,new Vector2(3,3),fill);
+        // Round paw on the sheets' half-pixel grid (80px art drawn at 0.5): 5px disc, 1px outline.
+        var hand=((Grip(drawInfo)-Main.screenPosition)*2).Floor()/2;
+        foreach (var size in PawOutline) PixelBox(ref drawInfo,hand,size,outline);
+        foreach (var size in PawFill) PixelBox(ref drawInfo,hand,size,fill);
     }
+
+    private static readonly Vector2[] PawOutline=[new(5,2),new(4,4),new(2,5)],PawFill=[new(3,2),new(2,3)];
 
     private static void Colors(in PlayerDrawSet draw,out Color outline,out Color fill)
     {
@@ -104,6 +116,6 @@ public sealed class CharacterHands : PlayerDrawLayer
     }
 
     private static void PixelBox(ref PlayerDrawSet draw,Vector2 position,Vector2 size,Color color)
-        => draw.DrawDataCache.Add(new DrawData(TextureAssets.MagicPixel.Value,position.Floor(),new Rectangle(0,0,1,1),color,0,
+        => draw.DrawDataCache.Add(new DrawData(TextureAssets.MagicPixel.Value,position,new Rectangle(0,0,1,1),color,0,
             new Vector2(.5f),size,SpriteEffects.None,0));
 }
